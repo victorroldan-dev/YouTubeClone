@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E2A89CE27C7461A00BD3187 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A89CD27C7461A00BD3187 /* RootPageViewController.swift */; };
+		8E2A89D027C7463400BD3187 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A89CF27C7463400BD3187 /* MainViewController.swift */; };
+		8E2A89D827C7475B00BD3187 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A89D627C7475B00BD3187 /* HomeViewController.swift */; };
+		8E2A89D927C7475B00BD3187 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2A89D727C7475B00BD3187 /* HomeViewController.xib */; };
+		8E2A89DC27C7476B00BD3187 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A89DA27C7476B00BD3187 /* VideosViewController.swift */; };
+		8E2A89DD27C7476B00BD3187 /* VideosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2A89DB27C7476B00BD3187 /* VideosViewController.xib */; };
+		8E2A89E027C7477900BD3187 /* PlaylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A89DE27C7477900BD3187 /* PlaylistsViewController.swift */; };
+		8E2A89E127C7477900BD3187 /* PlaylistsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2A89DF27C7477900BD3187 /* PlaylistsViewController.xib */; };
+		8E2A89E427C7478700BD3187 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A89E227C7478700BD3187 /* ChannelViewController.swift */; };
+		8E2A89E527C7478700BD3187 /* ChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2A89E327C7478700BD3187 /* ChannelViewController.xib */; };
+		8E2A89E827C7479400BD3187 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A89E627C7479400BD3187 /* AboutViewController.swift */; };
+		8E2A89E927C7479400BD3187 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2A89E727C7479400BD3187 /* AboutViewController.xib */; };
 		8EC735D927C2AA4200010A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC735D827C2AA4200010A7E /* AppDelegate.swift */; };
 		8EC735DB27C2AA4200010A7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC735DA27C2AA4200010A7E /* SceneDelegate.swift */; };
 		8EC735DD27C2AA4200010A7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC735DC27C2AA4200010A7E /* ViewController.swift */; };
@@ -20,6 +32,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E2A89CD27C7461A00BD3187 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
+		8E2A89CF27C7463400BD3187 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8E2A89D627C7475B00BD3187 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8E2A89D727C7475B00BD3187 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8E2A89DA27C7476B00BD3187 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		8E2A89DB27C7476B00BD3187 /* VideosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideosViewController.xib; sourceTree = "<group>"; };
+		8E2A89DE27C7477900BD3187 /* PlaylistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsViewController.swift; sourceTree = "<group>"; };
+		8E2A89DF27C7477900BD3187 /* PlaylistsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistsViewController.xib; sourceTree = "<group>"; };
+		8E2A89E227C7478700BD3187 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		8E2A89E327C7478700BD3187 /* ChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelViewController.xib; sourceTree = "<group>"; };
+		8E2A89E627C7479400BD3187 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		8E2A89E727C7479400BD3187 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		8EC735D527C2AA4200010A7E /* YouTubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC735D827C2AA4200010A7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EC735DA27C2AA4200010A7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +69,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E2A89CC27C745FA00BD3187 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A89CD27C7461A00BD3187 /* RootPageViewController.swift */,
+				8E2A89CF27C7463400BD3187 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8E2A89D127C746F900BD3187 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A89D627C7475B00BD3187 /* HomeViewController.swift */,
+				8E2A89D727C7475B00BD3187 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8E2A89D227C7470D00BD3187 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A89DA27C7476B00BD3187 /* VideosViewController.swift */,
+				8E2A89DB27C7476B00BD3187 /* VideosViewController.xib */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		8E2A89D327C7471400BD3187 /* Playlists */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A89DE27C7477900BD3187 /* PlaylistsViewController.swift */,
+				8E2A89DF27C7477900BD3187 /* PlaylistsViewController.xib */,
+			);
+			path = Playlists;
+			sourceTree = "<group>";
+		};
+		8E2A89D427C7472400BD3187 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A89E227C7478700BD3187 /* ChannelViewController.swift */,
+				8E2A89E327C7478700BD3187 /* ChannelViewController.xib */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		8E2A89D527C7472A00BD3187 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A89E627C7479400BD3187 /* AboutViewController.swift */,
+				8E2A89E727C7479400BD3187 /* AboutViewController.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		8EC735CC27C2AA4200010A7E = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +142,12 @@
 		8EC735D727C2AA4200010A7E /* YouTubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				8E2A89D527C7472A00BD3187 /* About */,
+				8E2A89D427C7472400BD3187 /* Channels */,
+				8E2A89D327C7471400BD3187 /* Playlists */,
+				8E2A89D227C7470D00BD3187 /* Videos */,
+				8E2A89D127C746F900BD3187 /* Home */,
+				8E2A89CC27C745FA00BD3187 /* Main */,
 				8EE245A527C5F0F8001165BF /* Model */,
 				8EC735D827C2AA4200010A7E /* AppDelegate.swift */,
 				8EC735DA27C2AA4200010A7E /* SceneDelegate.swift */,
@@ -145,9 +229,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E2A89E127C7477900BD3187 /* PlaylistsViewController.xib in Resources */,
 				8EC735E527C2AA4400010A7E /* LaunchScreen.storyboard in Resources */,
+				8E2A89E927C7479400BD3187 /* AboutViewController.xib in Resources */,
 				8EC735E227C2AA4400010A7E /* Assets.xcassets in Resources */,
+				8E2A89DD27C7476B00BD3187 /* VideosViewController.xib in Resources */,
 				8EC735E027C2AA4200010A7E /* Main.storyboard in Resources */,
+				8E2A89D927C7475B00BD3187 /* HomeViewController.xib in Resources */,
+				8E2A89E527C7478700BD3187 /* ChannelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,11 +249,18 @@
 			files = (
 				8EE245AB27C5FAAF001165BF /* PlaylistItemsModel.swift in Sources */,
 				8EC735DD27C2AA4200010A7E /* ViewController.swift in Sources */,
+				8E2A89DC27C7476B00BD3187 /* VideosViewController.swift in Sources */,
 				8EE245A727C5F124001165BF /* PlaylistModel.swift in Sources */,
+				8E2A89E027C7477900BD3187 /* PlaylistsViewController.swift in Sources */,
+				8E2A89E427C7478700BD3187 /* ChannelViewController.swift in Sources */,
 				8EC735D927C2AA4200010A7E /* AppDelegate.swift in Sources */,
 				8EE245A927C5F75B001165BF /* VideoModel.swift in Sources */,
+				8E2A89D827C7475B00BD3187 /* HomeViewController.swift in Sources */,
 				8EC735DB27C2AA4200010A7E /* SceneDelegate.swift in Sources */,
+				8E2A89E827C7479400BD3187 /* AboutViewController.swift in Sources */,
+				8E2A89D027C7463400BD3187 /* MainViewController.swift in Sources */,
 				8EE245AD27C5FAFA001165BF /* ChannelModel.swift in Sources */,
+				8E2A89CE27C7461A00BD3187 /* RootPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
