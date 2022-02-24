@@ -17,10 +17,10 @@ struct PlaylistModel: Decodable{
         let kind: String
         let etag: String
         let id: String
-        let snipet : Snipet
+        let snipet : Snippet
         let contentDetails : ContentDetails
         
-        struct Snipet: Decodable {
+        struct Snippet: Decodable {
             let publishedAt : String
             let channelId : String
             let title : String
