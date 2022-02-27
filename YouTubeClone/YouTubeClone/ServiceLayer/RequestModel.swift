@@ -24,6 +24,9 @@ struct RequestModel  {
 
     enum Endpoints : String   {
         case search = "/search"
+        case channels = "/channels"
+        case playlist = "/playlists"
+        case playlistItems = "/playlistItems"
         case empty = ""
     }
 

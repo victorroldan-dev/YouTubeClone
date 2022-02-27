@@ -42,6 +42,7 @@ class ServiceLayer {
                 let decodeData = try decoder.decode(T.self, from: data)
                 return decodeData
             }catch{
+                print(error)
                 throw NetworkError.couldNotDecodeData
             }
             

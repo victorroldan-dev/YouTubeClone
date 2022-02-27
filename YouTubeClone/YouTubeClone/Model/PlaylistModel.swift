@@ -17,7 +17,7 @@ struct PlaylistModel: Decodable{
         let kind: String
         let etag: String
         let id: String
-        let snipet : Snippet
+        let snippet : Snippet
         let contentDetails : ContentDetails
         
         struct Snippet: Decodable {
@@ -27,7 +27,6 @@ struct PlaylistModel: Decodable{
             let description : String
             let thumbnails: Thumbnails
             let channelTitle: String
-            let localized: Localized
             
             struct Thumbnails: Decodable{
                 let medium : Medium
@@ -38,12 +37,7 @@ struct PlaylistModel: Decodable{
                     let height : Int
                 }
             }//Thumbnails
-            
-            struct Localized : Decodable{
-                let title : String
-                let description : String
-                
-            }//Localized
+
             
         }//Snippet
         
