@@ -1,0 +1,85 @@
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "fM_XgVGxe5CZQVv4WykiAWQln0E",
+    "items": [
+        {
+            "kind": "youtube#video",
+            "etag": "QgM9vNFU2PtF2tgRMaS253D1iAI",
+            "id": "eLhG15kJws0",
+            "snippet": {
+                "publishedAt": "2021-11-11T05:00:11Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Manejo de Memoria - ARC y Retain Cycle con Closures y Delegates - iOS - Swift 3/3",
+                "description": "En este vide te explico qué son los closures brevemente y principalmente me enfoco en cómo se generan los retain cycles utilizando closures. Vas a aprender como revisar estos memory leaks desde el memory graph debuger. También te enseño cómo se puede generar un retain cycle utilizando el patron Delegations y también te explico cómo puedes resolverlo. \nTe traigo todo este conocimiento en español para que lo entiendas al 100%.\n\nNo olvides dejar tus comentarios y regalarme un like, de esta forma me apoyas en seguir creando contenido.\n\nParte 1: Manejo de Memoria - Value Type y Reference Type - iOS - Swift\nhttps://bit.ly/3bflhku\n\nParte 2: Manejo de Memoria - ARC y Retain Cycle, Strong, Weak, Unowned - iOS\nhttps://bit.ly/3jJqhm5\n\n\n-- Timestamps --\n00:00 Introducción\n00:40 Resumen de la parte 2\n01:28 Introducción a Closures\n02:10 Ejemplo práctico de Closures\n06:09 Retain Cycle en Closures \n07:18 Capture List en Closures\n10:42 Automatic Reference Counting en Closures\n12:30 Ejemplo de Closures y Retain Cycles en Xcode\n20:47 Patrón Observer y Closures\n25:11 Debug Memory Graph  \n26:09 Debug Navigator - Memory\n27:48 Memory Leak desde el Debug Memory Graph\n31:30 DispatchQueue y Capture List\n35:15 Retain Cycles y el Patrón Delegations\n39:15 Diagrama para saber cuando se genera un Retain Cycle con Closures\n\nDiagrama Detección de Retain Cycles - Medium\nhttps://medium.com/flawless-app-stories/you-dont-always-need-weak-self-a778bec505ef\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\n#iOSDevelopment #RetainCycle #MemoryLeak #MemoryManagement #closures #weakself #unowned #delgationspatter",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "tags": [
+                    "iOS development",
+                    "SwiftUI",
+                    "Swift",
+                    "Xcode",
+                    "Victor Roldan"
+                ],
+                "categoryId": "22",
+                "liveBroadcastContent": "none",
+                "localized": {
+                    "title": "Manejo de Memoria - ARC y Retain Cycle con Closures y Delegates - iOS - Swift 3/3",
+                    "description": "En este vide te explico qué son los closures brevemente y principalmente me enfoco en cómo se generan los retain cycles utilizando closures. Vas a aprender como revisar estos memory leaks desde el memory graph debuger. También te enseño cómo se puede generar un retain cycle utilizando el patron Delegations y también te explico cómo puedes resolverlo. \nTe traigo todo este conocimiento en español para que lo entiendas al 100%.\n\nNo olvides dejar tus comentarios y regalarme un like, de esta forma me apoyas en seguir creando contenido.\n\nParte 1: Manejo de Memoria - Value Type y Reference Type - iOS - Swift\nhttps://bit.ly/3bflhku\n\nParte 2: Manejo de Memoria - ARC y Retain Cycle, Strong, Weak, Unowned - iOS\nhttps://bit.ly/3jJqhm5\n\n\n-- Timestamps --\n00:00 Introducción\n00:40 Resumen de la parte 2\n01:28 Introducción a Closures\n02:10 Ejemplo práctico de Closures\n06:09 Retain Cycle en Closures \n07:18 Capture List en Closures\n10:42 Automatic Reference Counting en Closures\n12:30 Ejemplo de Closures y Retain Cycles en Xcode\n20:47 Patrón Observer y Closures\n25:11 Debug Memory Graph  \n26:09 Debug Navigator - Memory\n27:48 Memory Leak desde el Debug Memory Graph\n31:30 DispatchQueue y Capture List\n35:15 Retain Cycles y el Patrón Delegations\n39:15 Diagrama para saber cuando se genera un Retain Cycle con Closures\n\nDiagrama Detección de Retain Cycles - Medium\nhttps://medium.com/flawless-app-stories/you-dont-always-need-weak-self-a778bec505ef\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\n#iOSDevelopment #RetainCycle #MemoryLeak #MemoryManagement #closures #weakself #unowned #delgationspatter"
+                },
+                "defaultAudioLanguage": "es-419"
+            },
+            "contentDetails": {
+                "duration": "PT42M14S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "false",
+                "licensedContent": false,
+                "contentRating": {},
+                "projection": "rectangular"
+            },
+            "status": {
+                "uploadStatus": "processed",
+                "privacyStatus": "public",
+                "license": "youtube",
+                "embeddable": true,
+                "publicStatsViewable": true,
+                "madeForKids": false
+            },
+            "statistics": {
+                "viewCount": "180",
+                "likeCount": "23",
+                "favoriteCount": "0",
+                "commentCount": "5"
+            },
+            "player": {
+                "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/eLhG15kJws0\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+            },
+            "topicDetails": {
+                "topicCategories": [
+                    "https://en.wikipedia.org/wiki/Knowledge"
+                ]
+            },
+            "recordingDetails": {}
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 1
+    }
+}

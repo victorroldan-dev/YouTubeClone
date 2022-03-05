@@ -1,0 +1,230 @@
+{
+    "kind": "youtube#playlistListResponse",
+    "etag": "dpqqSx7KXAjML-BHeLnq0_sj_tk",
+    "pageInfo": {
+        "totalResults": 5,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#playlist",
+            "etag": "lT_A4fDoR_vS42VO6ULc7W33Y18",
+            "id": "PLT_OObKZ3CpuNE0t8rCWkArfpTgkJP9lm",
+            "snippet": {
+                "publishedAt": "2021-10-23T04:53:14Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Manejo de Memoria",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "localized": {
+                    "title": "Manejo de Memoria",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 3
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "Mrq8P1NsnrFhehOyeitpBxNc_Qs",
+            "id": "PLT_OObKZ3CpsvBaVOFyZR8goHaQyQFNFg",
+            "snippet": {
+                "publishedAt": "2021-09-30T00:14:30Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "AutoLayout",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/nFO6sm01Tig/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/nFO6sm01Tig/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/nFO6sm01Tig/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/nFO6sm01Tig/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/nFO6sm01Tig/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "localized": {
+                    "title": "AutoLayout",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 1
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "7Sm86v0aMcrWEXLnM_F0EZYU1sw",
+            "id": "PLT_OObKZ3CptJSLph-N2i-mFRMh_GsoTW",
+            "snippet": {
+                "publishedAt": "2021-09-25T20:55:58Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Protocols, Delegates y Dependency Injection",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "localized": {
+                    "title": "Protocols, Delegates y Dependency Injection",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 3
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "RZjxbbDaGL4aGMNonLmXuTsYRe0",
+            "id": "PLT_OObKZ3CpvG4hmu2gnzQ6tCXru36NRE",
+            "snippet": {
+                "publishedAt": "2021-09-17T13:20:40Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "CocoaPods",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/SK4NFgEOmcM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/SK4NFgEOmcM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/SK4NFgEOmcM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/SK4NFgEOmcM/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/SK4NFgEOmcM/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "localized": {
+                    "title": "CocoaPods",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 2
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "z6hd3xdUHXtBpNR1q7B9q5vdXmM",
+            "id": "PLT_OObKZ3CpurRPKIFvYcTDJQj55eE6dG",
+            "snippet": {
+                "publishedAt": "2021-09-07T02:30:54Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "General",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "localized": {
+                    "title": "General",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 10
+            }
+        }
+    ]
+}

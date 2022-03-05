@@ -1,0 +1,59 @@
+{
+    "kind": "youtube#channelListResponse",
+    "etag": "NZFDN0EewEIssO7kw7kaaS6Sjvo",
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#channel",
+            "etag": "O620S0fUUusYcg0vz1qmKHF7eaY",
+            "id": "UC_I_lCplbwIf60iUgsTE79g",
+            "snippet": {
+                "title": "Victor Roldan Dev",
+                "description": "Bienvenido a mi canal, soy Victor Roldán y estoy aquí para ayudar a formarte como iOS Developer utilizando principalmente Swift y SwiftUI. \n\nVoy a estar trabajando duro para traerte contenido útil que te sirva para iniciarte en este mundo del *Software Development*. El contenido que estaré creando es sobre mobile development, específicamente con iOS, enfocándome principalmente en *Swift y SwiftUI*\n\nMi canal estará dirigido a todos aquellos que quieran seguir nutriéndose de conocimientos y para quienes quieran aprender a dar sus primeros pasos en el desarrollo mobile iOS.\n\nSobre mi:\nSoy Venezolano, Ingeniero en Informática, con +11 años de experiencia en el área, he sido Tech Lead durante los últimos 4 años en empresas de Software Development. En mi carrera pasé por diferentes seniorities comenzando com Jr hasta escalar a Tech Lead, en mi trayectoria he recogido un montón de conocimientos que te traigo totalmente gratis en este canal.\n",
+                "publishedAt": "2021-08-15T21:40:44.921697Z",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/kVyt7iSahighU4IIKHqvpQZHYiE9jYDCYjjs46ovc12aVuhEs_lqp5TLRSUYaJ9srTMSb3sg=s88-c-k-c0x00ffffff-no-rj",
+                        "width": 88,
+                        "height": 88
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/kVyt7iSahighU4IIKHqvpQZHYiE9jYDCYjjs46ovc12aVuhEs_lqp5TLRSUYaJ9srTMSb3sg=s240-c-k-c0x00ffffff-no-rj",
+                        "width": 240,
+                        "height": 240
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/kVyt7iSahighU4IIKHqvpQZHYiE9jYDCYjjs46ovc12aVuhEs_lqp5TLRSUYaJ9srTMSb3sg=s800-c-k-c0x00ffffff-no-rj",
+                        "width": 800,
+                        "height": 800
+                    }
+                },
+                "localized": {
+                    "title": "Victor Roldan Dev",
+                    "description": "Bienvenido a mi canal, soy Victor Roldán y estoy aquí para ayudar a formarte como iOS Developer utilizando principalmente Swift y SwiftUI. \n\nVoy a estar trabajando duro para traerte contenido útil que te sirva para iniciarte en este mundo del *Software Development*. El contenido que estaré creando es sobre mobile development, específicamente con iOS, enfocándome principalmente en *Swift y SwiftUI*\n\nMi canal estará dirigido a todos aquellos que quieran seguir nutriéndose de conocimientos y para quienes quieran aprender a dar sus primeros pasos en el desarrollo mobile iOS.\n\nSobre mi:\nSoy Venezolano, Ingeniero en Informática, con +11 años de experiencia en el área, he sido Tech Lead durante los últimos 4 años en empresas de Software Development. En mi carrera pasé por diferentes seniorities comenzando com Jr hasta escalar a Tech Lead, en mi trayectoria he recogido un montón de conocimientos que te traigo totalmente gratis en este canal.\n"
+                },
+                "country": "CO"
+            },
+            "statistics": {
+                "viewCount": "5950",
+                "subscriberCount": "262",
+                "hiddenSubscriberCount": false,
+                "videoCount": "18"
+            },
+            "brandingSettings": {
+                "channel": {
+                    "title": "Victor Roldan Dev",
+                    "description": "Bienvenido a mi canal, soy Victor Roldán y estoy aquí para ayudar a formarte como iOS Developer utilizando principalmente Swift y SwiftUI. \n\nVoy a estar trabajando duro para traerte contenido útil que te sirva para iniciarte en este mundo del *Software Development*. El contenido que estaré creando es sobre mobile development, específicamente con iOS, enfocándome principalmente en *Swift y SwiftUI*\n\nMi canal estará dirigido a todos aquellos que quieran seguir nutriéndose de conocimientos y para quienes quieran aprender a dar sus primeros pasos en el desarrollo mobile iOS.\n\nSobre mi:\nSoy Venezolano, Ingeniero en Informática, con +11 años de experiencia en el área, he sido Tech Lead durante los últimos 4 años en empresas de Software Development. En mi carrera pasé por diferentes seniorities comenzando com Jr hasta escalar a Tech Lead, en mi trayectoria he recogido un montón de conocimientos que te traigo totalmente gratis en este canal.\n",
+                    "keywords": "ios development tutorials xcode swift uikit swiftui mobile app \"iOS app\" \"Victor Roldan\" \"como comenzar con xcode\" \"tutoriales de iOS\" \"curso gratis ios swift\"",
+                    "country": "CO"
+                },
+                "image": {
+                    "bannerExternalUrl": "https://yt3.ggpht.com/hxiGT9qtuCfjmx7NKEfsBH1JfVRohXZ8PDX3f90WkFDTVGE5wL7TuILG4oUVmKUGQB44xWN_ag"
+                }
+            }
+        }
+    ]
+}
