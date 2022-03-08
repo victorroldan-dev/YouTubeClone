@@ -10,10 +10,10 @@ import Foundation
 struct PlaylistItemsModel: Decodable{
     let kind: String
     let etag: String
-    let items: [PlaylistItems]
+    let items: [Item]
     let pageInfo : PageInfo
     
-    struct PlaylistItems: Decodable{
+    struct Item: Decodable{
         let kind : String
         let etag : String
         let id : String
