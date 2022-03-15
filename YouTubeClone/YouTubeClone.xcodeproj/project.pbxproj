@@ -51,6 +51,9 @@
 		8EE245AB27C5FAAF001165BF /* PlaylistItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE245AA27C5FAAF001165BF /* PlaylistItemsModel.swift */; };
 		8EE245AD27C5FAFA001165BF /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE245AC27C5FAFA001165BF /* ChannelModel.swift */; };
 		8EF12FA627E04F7300B59A0B /* SectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF12FA527E04F7300B59A0B /* SectionTitleView.swift */; };
+		8EF12FAA27E051FB00B59A0B /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF12FA827E051FB00B59A0B /* BottomSheetViewController.swift */; };
+		8EF12FAB27E051FB00B59A0B /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF12FA927E051FB00B59A0B /* BottomSheetViewController.xib */; };
+		8EF12FAE27E0582D00B59A0B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF12FAD27E0582D00B59A0B /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +103,9 @@
 		8EE245AA27C5FAAF001165BF /* PlaylistItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemsModel.swift; sourceTree = "<group>"; };
 		8EE245AC27C5FAFA001165BF /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
 		8EF12FA527E04F7300B59A0B /* SectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleView.swift; sourceTree = "<group>"; };
+		8EF12FA827E051FB00B59A0B /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		8EF12FA927E051FB00B59A0B /* BottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
+		8EF12FAD27E0582D00B59A0B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A099A7B7046FC80FD166D3BA /* Pods-YouTubeClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeClone.debug.xcconfig"; path = "Target Support Files/Pods-YouTubeClone/Pods-YouTubeClone.debug.xcconfig"; sourceTree = "<group>"; };
 		EAEE9AA3C1D83FE1BAE8728D /* Pods-YouTubeClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeClone.release.xcconfig"; path = "Target Support Files/Pods-YouTubeClone/Pods-YouTubeClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +221,7 @@
 		8E53D5E327CB3D7F000E88D9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8EF12FAC27E0581800B59A0B /* Extensions */,
 				8EB4FCBF27D324A800AF9598 /* Mock */,
 				8E53D5E427CB3DB1000E88D9 /* Constants.swift */,
 				8EB4FCC027D324BD00AF9598 /* Utils.swift */,
@@ -234,6 +241,7 @@
 		8E53D5E727CB408C000E88D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EF12FA727E051D400B59A0B /* BottomSheet */,
 				8E10A26C27D5666500FB3EE5 /* CustomCells */,
 				8E2A89D627C7475B00BD3187 /* HomeViewController.swift */,
 				8E2A89D727C7475B00BD3187 /* HomeViewController.xib */,
@@ -322,6 +330,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		8EF12FA727E051D400B59A0B /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				8EF12FA827E051FB00B59A0B /* BottomSheetViewController.swift */,
+				8EF12FA927E051FB00B59A0B /* BottomSheetViewController.xib */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		8EF12FAC27E0581800B59A0B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8EF12FAD27E0582D00B59A0B /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,6 +417,7 @@
 				8E2A89E927C7479400BD3187 /* AboutViewController.xib in Resources */,
 				8EB4FCCD27D329B700AF9598 /* VideoOnlyOne.json in Resources */,
 				8EC735E227C2AA4400010A7E /* Assets.xcassets in Resources */,
+				8EF12FAB27E051FB00B59A0B /* BottomSheetViewController.xib in Resources */,
 				8E2A89DD27C7476B00BD3187 /* VideosViewController.xib in Resources */,
 				8E10A27027D5669700FB3EE5 /* ChannelCell.xib in Resources */,
 				8EC735E027C2AA4200010A7E /* Main.storyboard in Resources */,
@@ -451,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EE245AB27C5FAAF001165BF /* PlaylistItemsModel.swift in Sources */,
+				8EF12FAE27E0582D00B59A0B /* UIView+Extension.swift in Sources */,
 				8E53D5E027CB3CF7000E88D9 /* NetworkError.swift in Sources */,
 				8EC735DD27C2AA4200010A7E /* ViewController.swift in Sources */,
 				8E53D5ED27CB435F000E88D9 /* HomePresenter.swift in Sources */,
@@ -465,6 +492,7 @@
 				8E2A89E427C7478700BD3187 /* ChannelViewController.swift in Sources */,
 				8EB4FCCF27D32D1A00AF9598 /* MockManager.swift in Sources */,
 				8EC735D927C2AA4200010A7E /* AppDelegate.swift in Sources */,
+				8EF12FAA27E051FB00B59A0B /* BottomSheetViewController.swift in Sources */,
 				8E10A26F27D5669700FB3EE5 /* ChannelCell.swift in Sources */,
 				8EE245A927C5F75B001165BF /* VideoModel.swift in Sources */,
 				8E2A89D827C7475B00BD3187 /* HomeViewController.swift in Sources */,

@@ -15,9 +15,16 @@ class PlaylistCell: UITableViewCell {
     @IBOutlet weak var videoCount: UILabel!
     @IBOutlet weak var videoTitle: UILabel!
     @IBOutlet weak var videoImage: UIImageView!
+    var didTapDostsButton : (()->Void)?
     
     override func awakeFromNib() {
         configView()
+    }
+    
+    @IBAction func dotsButtonTapped(_ sender: Any) {
+        if let tap = didTapDostsButton{
+            tap()
+        }
     }
     
     private func configView(){

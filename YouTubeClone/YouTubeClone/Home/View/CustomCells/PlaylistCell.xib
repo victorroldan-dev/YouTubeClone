@@ -80,11 +80,23 @@
                             <constraint firstAttribute="width" constant="13" id="ga7-Vq-Nrc"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLc-ac-zBX">
+                        <rect key="frame" x="356" y="206.5" width="13" height="13"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="dotsButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DLi-Ys-kHC"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="JiK-w8-OYV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3QB-ZQ-Vvr"/>
+                    <constraint firstItem="xLc-ac-zBX" firstAttribute="width" secondItem="GHk-sW-qbv" secondAttribute="width" id="7pR-se-oOl"/>
+                    <constraint firstItem="xLc-ac-zBX" firstAttribute="centerY" secondItem="GHk-sW-qbv" secondAttribute="centerY" id="GCI-c9-b5N"/>
                     <constraint firstItem="ljc-yl-R6i" firstAttribute="top" secondItem="JiK-w8-OYV" secondAttribute="bottom" id="GvO-Mz-Wtk"/>
                     <constraint firstItem="ljc-yl-R6i" firstAttribute="width" secondItem="JiK-w8-OYV" secondAttribute="width" id="JIC-uW-EiY"/>
+                    <constraint firstItem="xLc-ac-zBX" firstAttribute="centerX" secondItem="GHk-sW-qbv" secondAttribute="centerX" id="POZ-5k-KWG"/>
+                    <constraint firstItem="xLc-ac-zBX" firstAttribute="height" secondItem="GHk-sW-qbv" secondAttribute="height" id="S3D-wy-WBp"/>
                     <constraint firstItem="GHk-sW-qbv" firstAttribute="centerY" secondItem="ljc-yl-R6i" secondAttribute="centerY" id="UTF-Sn-uB3"/>
                     <constraint firstItem="OHc-af-yGG" firstAttribute="trailing" secondItem="JiK-w8-OYV" secondAttribute="trailing" id="VqV-bI-EoF"/>
                     <constraint firstItem="OHc-af-yGG" firstAttribute="height" secondItem="JiK-w8-OYV" secondAttribute="height" id="Xqw-xf-iE2"/>
