@@ -21,7 +21,7 @@ class VideoCell: UITableViewCell {
     }
 
     private func configView(){
-        
+        selectionStyle = .none
     }
     
     func configCell(model : Any){
