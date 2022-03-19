@@ -32,8 +32,8 @@ class VideoCell: UITableViewCell {
         }
     }
     func configCell(model : Any){
-        dotsImage.image = UIImage(named: "dots")?.withRenderingMode(.alwaysTemplate)
-        dotsImage.tintColor = UIColor(named: "whiteColor")
+        dotsImage.image = .dotsImage
+        dotsImage.tintColor = .whiteColor
         
         if let video = model as? VideoModel.Item{
             if let imageUrl = video.snippet?.thumbnails.medium?.url, let url = URL(string: imageUrl){

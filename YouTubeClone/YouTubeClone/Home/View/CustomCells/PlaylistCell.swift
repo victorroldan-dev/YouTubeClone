@@ -30,8 +30,8 @@ class PlaylistCell: UITableViewCell {
     private func configView(){
         selectionStyle = .none
         super.awakeFromNib()
-        dotsImage.image = UIImage(named: "dots")?.withRenderingMode(.alwaysTemplate)
-        dotsImage.tintColor = UIColor(named: "whiteColor")
+        dotsImage.image = .dotsImage
+        dotsImage.tintColor = .whiteColor
     }
     
     func configCell(model : PlaylistModel.Item){

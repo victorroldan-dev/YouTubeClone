@@ -32,6 +32,9 @@
 		8E53D5E527CB3DB1000E88D9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E53D5E427CB3DB1000E88D9 /* Constants.swift */; };
 		8E53D5EB27CB40B4000E88D9 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E53D5EA27CB40B4000E88D9 /* HomeProvider.swift */; };
 		8E53D5ED27CB435F000E88D9 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E53D5EC27CB435F000E88D9 /* HomePresenter.swift */; };
+		8E84894B27E551B3005D16B2 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84894A27E551B3005D16B2 /* UITableView+Extension.swift */; };
+		8E84894D27E5558C005D16B2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84894C27E5558C005D16B2 /* UIColor+Extension.swift */; };
+		8E84894F27E556D9005D16B2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84894E27E556D9005D16B2 /* UIImage+Extension.swift */; };
 		8EB4FCBE27D3246800AF9598 /* HomeProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4FCBD27D3246800AF9598 /* HomeProviderMock.swift */; };
 		8EB4FCC127D324BD00AF9598 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4FCC027D324BD00AF9598 /* Utils.swift */; };
 		8EB4FCC327D3263600AF9598 /* Channel.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB4FCC227D3263600AF9598 /* Channel.json */; };
@@ -86,6 +89,9 @@
 		8E53D5E427CB3DB1000E88D9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8E53D5EA27CB40B4000E88D9 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
 		8E53D5EC27CB435F000E88D9 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		8E84894A27E551B3005D16B2 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		8E84894C27E5558C005D16B2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		8E84894E27E556D9005D16B2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8EB4FCBD27D3246800AF9598 /* HomeProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProviderMock.swift; sourceTree = "<group>"; };
 		8EB4FCC027D324BD00AF9598 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		8EB4FCC227D3263600AF9598 /* Channel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Channel.json; sourceTree = "<group>"; };
@@ -379,6 +385,9 @@
 			isa = PBXGroup;
 			children = (
 				8EF12FAD27E0582D00B59A0B /* UIView+Extension.swift */,
+				8E84894A27E551B3005D16B2 /* UITableView+Extension.swift */,
+				8E84894C27E5558C005D16B2 /* UIColor+Extension.swift */,
+				8E84894E27E556D9005D16B2 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -524,6 +533,7 @@
 				8EE245A727C5F124001165BF /* PlaylistModel.swift in Sources */,
 				8EB4FCBE27D3246800AF9598 /* HomeProviderMock.swift in Sources */,
 				8EB4FCC127D324BD00AF9598 /* Utils.swift in Sources */,
+				8E84894B27E551B3005D16B2 /* UITableView+Extension.swift in Sources */,
 				8E2A89E027C7477900BD3187 /* PlaylistsViewController.swift in Sources */,
 				8E53D5E227CB3D30000E88D9 /* RequestModel.swift in Sources */,
 				8EC3132D27E3FAA000C96A1E /* VideosProvider.swift in Sources */,
@@ -533,6 +543,8 @@
 				8EC735D927C2AA4200010A7E /* AppDelegate.swift in Sources */,
 				8EC3132F27E3FC4B00C96A1E /* VideosProviderMock.swift in Sources */,
 				8EF12FAA27E051FB00B59A0B /* BottomSheetViewController.swift in Sources */,
+				8E84894D27E5558C005D16B2 /* UIColor+Extension.swift in Sources */,
+				8E84894F27E556D9005D16B2 /* UIImage+Extension.swift in Sources */,
 				8E10A26F27D5669700FB3EE5 /* ChannelCell.swift in Sources */,
 				8EE245A927C5F75B001165BF /* VideoModel.swift in Sources */,
 				8E2A89D827C7475B00BD3187 /* HomeViewController.swift in Sources */,
