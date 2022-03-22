@@ -16,8 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAN-8L-VA1" customClass="TabsView" customModule="YouTubeClone" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="45"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="VA1-bS-iLb"/>
+                                </constraints>
+                            </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2js-3i-3Wm">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="133" width="414" height="729"/>
                                 <connections>
                                     <segue destination="83H-qN-pW2" kind="embed" id="fzh-av-pRd"/>
                                 </connections>
@@ -26,13 +33,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2js-3i-3Wm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ApR-M0-fUU"/>
+                            <constraint firstItem="2js-3i-3Wm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3ux-7c-iYV"/>
+                            <constraint firstItem="GAN-8L-VA1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HH5-oN-VDO"/>
+                            <constraint firstItem="2js-3i-3Wm" firstAttribute="top" secondItem="GAN-8L-VA1" secondAttribute="bottom" id="Hh5-rc-UY2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="GAN-8L-VA1" secondAttribute="top" id="OP1-Uw-1dw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2js-3i-3Wm" secondAttribute="trailing" id="WH3-Ik-uXV"/>
                             <constraint firstItem="2js-3i-3Wm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XSW-hS-QfV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2js-3i-3Wm" secondAttribute="bottom" id="dpN-J8-DaV"/>
+                            <constraint firstItem="2js-3i-3Wm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oEs-yK-mG1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GAN-8L-VA1" secondAttribute="trailing" id="yfd-qP-PSg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="otb-Ar-W59"/>
+                    <connections>
+                        <outlet property="tabsView" destination="GAN-8L-VA1" id="2Y1-o9-0kd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

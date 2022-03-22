@@ -27,6 +27,9 @@
 		8E2A89E827C7479400BD3187 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A89E627C7479400BD3187 /* AboutViewController.swift */; };
 		8E2A89E927C7479400BD3187 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E2A89E727C7479400BD3187 /* AboutViewController.xib */; };
 		8E369BAF27EA41A500CD5F3E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E369BAE27EA41A500CD5F3E /* BaseViewController.swift */; };
+		8E369BB227EA4AFB00CD5F3E /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E369BB127EA4AFB00CD5F3E /* TabsView.swift */; };
+		8E369BB627EA4CC400CD5F3E /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E369BB427EA4CC400CD5F3E /* OptionCell.swift */; };
+		8E369BB727EA4CC400CD5F3E /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E369BB527EA4CC400CD5F3E /* OptionCell.xib */; };
 		8E53D5DE27CB3CCC000E88D9 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E53D5DD27CB3CCC000E88D9 /* ServiceLayer.swift */; };
 		8E53D5E027CB3CF7000E88D9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E53D5DF27CB3CF7000E88D9 /* NetworkError.swift */; };
 		8E53D5E227CB3D30000E88D9 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E53D5E127CB3D30000E88D9 /* RequestModel.swift */; };
@@ -85,6 +88,9 @@
 		8E2A89E627C7479400BD3187 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		8E2A89E727C7479400BD3187 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		8E369BAE27EA41A500CD5F3E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8E369BB127EA4AFB00CD5F3E /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		8E369BB427EA4CC400CD5F3E /* OptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		8E369BB527EA4CC400CD5F3E /* OptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
 		8E53D5DD27CB3CCC000E88D9 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
 		8E53D5DF27CB3CF7000E88D9 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		8E53D5E127CB3D30000E88D9 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
@@ -172,6 +178,7 @@
 		8E2A89CC27C745FA00BD3187 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				8E369BB027EA4AE400CD5F3E /* TabsView */,
 				8E2A89CD27C7461A00BD3187 /* RootPageViewController.swift */,
 				8E2A89CF27C7463400BD3187 /* MainViewController.swift */,
 			);
@@ -224,6 +231,24 @@
 				8E2A89E727C7479400BD3187 /* AboutViewController.xib */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		8E369BB027EA4AE400CD5F3E /* TabsView */ = {
+			isa = PBXGroup;
+			children = (
+				8E369BB327EA4CA400CD5F3E /* Cell */,
+				8E369BB127EA4AFB00CD5F3E /* TabsView.swift */,
+			);
+			path = TabsView;
+			sourceTree = "<group>";
+		};
+		8E369BB327EA4CA400CD5F3E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8E369BB427EA4CC400CD5F3E /* OptionCell.swift */,
+				8E369BB527EA4CC400CD5F3E /* OptionCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		8E53D5DC27CB3C90000E88D9 /* ServiceLayer */ = {
@@ -455,6 +480,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E369BB727EA4CC400CD5F3E /* OptionCell.xib in Resources */,
 				8E10A27427D566BF00FB3EE5 /* VideoCell.xib in Resources */,
 				8E2A89E127C7477900BD3187 /* PlaylistsViewController.xib in Resources */,
 				8EB4FCCB27D3288B00AF9598 /* SearchVideos.json in Resources */,
@@ -527,6 +553,7 @@
 			files = (
 				8EC3132B27E3FA9700C96A1E /* VideosPresenter.swift in Sources */,
 				8EE245AB27C5FAAF001165BF /* PlaylistItemsModel.swift in Sources */,
+				8E369BB227EA4AFB00CD5F3E /* TabsView.swift in Sources */,
 				8EF12FAE27E0582D00B59A0B /* UIView+Extension.swift in Sources */,
 				8E53D5E027CB3CF7000E88D9 /* NetworkError.swift in Sources */,
 				8EC735DD27C2AA4200010A7E /* ViewController.swift in Sources */,
@@ -540,6 +567,7 @@
 				8E84894B27E551B3005D16B2 /* UITableView+Extension.swift in Sources */,
 				8E2A89E027C7477900BD3187 /* PlaylistsViewController.swift in Sources */,
 				8E53D5E227CB3D30000E88D9 /* RequestModel.swift in Sources */,
+				8E369BB627EA4CC400CD5F3E /* OptionCell.swift in Sources */,
 				8EC3132D27E3FAA000C96A1E /* VideosProvider.swift in Sources */,
 				8E10A27727D566CF00FB3EE5 /* PlaylistCell.swift in Sources */,
 				8E2A89E427C7478700BD3187 /* ChannelViewController.swift in Sources */,
