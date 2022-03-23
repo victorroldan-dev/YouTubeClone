@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "2e1eae87-98b9-43bd-89fd-50dc3a7923c7",
+		"name": "YouTube",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/search?part=snippet&key={{api-key}}&q=victor roldan dev&type=video&maxResults=2&relatedToVideoId=A2q7jqd_ne0",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "part",
+							"value": "snippet"
+						},
+						{
+							"key": "key",
+							"value": "{{api-key}}"
+						},
+						{
+							"key": "q",
+							"value": "victor roldan dev"
+						},
+						{
+							"key": "type",
+							"value": "video"
+						},
+						{
+							"key": "channelId",
+							"value": "UC_I_lCplbwIf60iUgsTE79g",
+							"disabled": true
+						},
+						{
+							"key": "maxResults",
+							"value": "2"
+						},
+						{
+							"key": "order",
+							"value": "viewCount",
+							"disabled": true
+						},
+						{
+							"key": "viewCount",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "relatedToVideoId",
+							"value": "A2q7jqd_ne0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Channels",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/channels?part=snippet,statistics,brandingSettings&key={{api-key}}&id=UC_I_lCplbwIf60iUgsTE79g",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"channels"
+					],
+					"query": [
+						{
+							"key": "part",
+							"value": "snippet,statistics,brandingSettings"
+						},
+						{
+							"key": "key",
+							"value": "{{api-key}}"
+						},
+						{
+							"key": "id",
+							"value": "UC_I_lCplbwIf60iUgsTE79g"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Videos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/videos?key={{api-key}}&part=snippet,contentDetails,status,statistics,topicDetails,recordingDetails,player&id=eLhG15kJws0",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"videos"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{api-key}}"
+						},
+						{
+							"key": "part",
+							"value": "snippet,contentDetails,status,statistics,topicDetails,recordingDetails,player"
+						},
+						{
+							"key": "myRating",
+							"value": "like",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "eLhG15kJws0"
+						},
+						{
+							"key": "videoCategoryId",
+							"value": "22",
+							"disabled": true
+						},
+						{
+							"key": "chart",
+							"value": "mostPopular",
+							"disabled": true
+						},
+						{
+							"key": "pageToken",
+							"value": "CAUQAA",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Playlist",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/playlists?part=snippet,contentDetails&key={{api-key}}&channelId=UC_I_lCplbwIf60iUgsTE79g",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"playlists"
+					],
+					"query": [
+						{
+							"key": "part",
+							"value": "snippet,contentDetails"
+						},
+						{
+							"key": "key",
+							"value": "{{api-key}}"
+						},
+						{
+							"key": "channelId",
+							"value": "UC_I_lCplbwIf60iUgsTE79g"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Playlist Items",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/playlistItems?part=snippet,id,contentDetails&key={{api-key}}&playlistId=PLT_OObKZ3CpuNE0t8rCWkArfpTgkJP9lm",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"playlistItems"
+					],
+					"query": [
+						{
+							"key": "part",
+							"value": "snippet,id,contentDetails"
+						},
+						{
+							"key": "key",
+							"value": "{{api-key}}"
+						},
+						{
+							"key": "playlistId",
+							"value": "PLT_OObKZ3CpuNE0t8rCWkArfpTgkJP9lm"
+						},
+						{
+							"key": "id",
+							"value": "zPg8GlIP_ZoiuXAiKJxIaqjKNko",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
