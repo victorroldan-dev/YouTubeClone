@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayVideoViewController" customModule="YouTubeClone" customModuleProvider="target">
+            <connections>
+                <outlet property="playerView" destination="67f-7Z-Doi" id="ysc-rR-xyz"/>
+                <outlet property="tableViewVideos" destination="whu-t6-AeT" id="QHh-i5-NiR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67f-7Z-Doi" customClass="YTPlayerView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="225"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="225" id="fRg-Tb-VkL"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="whu-t6-AeT">
+                    <rect key="frame" x="0.0" y="269" width="414" height="593"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="whu-t6-AeT" secondAttribute="trailing" id="0ih-ny-02p"/>
+                <constraint firstItem="67f-7Z-Doi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YRa-rp-seg"/>
+                <constraint firstItem="67f-7Z-Doi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="arS-sB-IEq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="whu-t6-AeT" secondAttribute="bottom" id="fkr-Zj-ITZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="67f-7Z-Doi" secondAttribute="trailing" id="hay-We-cXM"/>
+                <constraint firstItem="whu-t6-AeT" firstAttribute="top" secondItem="67f-7Z-Doi" secondAttribute="bottom" id="lQm-Ve-NdK"/>
+                <constraint firstItem="whu-t6-AeT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="z8B-ao-hRP"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="132"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

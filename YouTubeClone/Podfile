@@ -8,5 +8,6 @@ target 'YouTubeClone' do
   # Pods for YouTubeClone
   pod 'Kingfisher'
   pod 'FloatingPanel'
+  pod 'youtube-ios-player-helper'
   
 end

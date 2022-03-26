@@ -428,10 +428,42 @@
 		8EF5675527EE8CAA009C1450 /* PlayVideo */ = {
 			isa = PBXGroup;
 			children = (
+				8EF5675C27EE954E009C1450 /* Model */,
+				8EF5675B27EE9548009C1450 /* Presenter */,
+				8EF5675A27EE953F009C1450 /* View */,
+			);
+			path = PlayVideo;
+			sourceTree = "<group>";
+		};
+		8EF5675A27EE953F009C1450 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				8EF5675627EE8CC1009C1450 /* PlayVideoViewController.swift */,
 				8EF5675727EE8CC1009C1450 /* PlayVideoViewController.xib */,
 			);
-			path = PlayVideo;
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EF5675B27EE9548009C1450 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8EF5675C27EE954E009C1450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5675D27EE9553009C1450 /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EF5675D27EE9553009C1450 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
