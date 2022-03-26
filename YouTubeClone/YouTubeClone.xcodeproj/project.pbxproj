@@ -65,6 +65,8 @@
 		8EF12FAA27E051FB00B59A0B /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF12FA827E051FB00B59A0B /* BottomSheetViewController.swift */; };
 		8EF12FAB27E051FB00B59A0B /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF12FA927E051FB00B59A0B /* BottomSheetViewController.xib */; };
 		8EF12FAE27E0582D00B59A0B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF12FAD27E0582D00B59A0B /* UIView+Extension.swift */; };
+		8EF5675827EE8CC1009C1450 /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF5675627EE8CC1009C1450 /* PlayVideoViewController.swift */; };
+		8EF5675927EE8CC1009C1450 /* PlayVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EF5675727EE8CC1009C1450 /* PlayVideoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +130,8 @@
 		8EF12FA827E051FB00B59A0B /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		8EF12FA927E051FB00B59A0B /* BottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
 		8EF12FAD27E0582D00B59A0B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8EF5675627EE8CC1009C1450 /* PlayVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
+		8EF5675727EE8CC1009C1450 /* PlayVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayVideoViewController.xib; sourceTree = "<group>"; };
 		A099A7B7046FC80FD166D3BA /* Pods-YouTubeClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeClone.debug.xcconfig"; path = "Target Support Files/Pods-YouTubeClone/Pods-YouTubeClone.debug.xcconfig"; sourceTree = "<group>"; };
 		EAEE9AA3C1D83FE1BAE8728D /* Pods-YouTubeClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeClone.release.xcconfig"; path = "Target Support Files/Pods-YouTubeClone/Pods-YouTubeClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -377,6 +381,7 @@
 				8E2A89D227C7470D00BD3187 /* Videos */,
 				8E2A89D127C746F900BD3187 /* Home */,
 				8E2A89CC27C745FA00BD3187 /* Main */,
+				8EF5675527EE8CAA009C1450 /* PlayVideo */,
 				8EE245A527C5F0F8001165BF /* Model */,
 				8EC735D827C2AA4200010A7E /* AppDelegate.swift */,
 				8EC735DA27C2AA4200010A7E /* SceneDelegate.swift */,
@@ -418,6 +423,15 @@
 				8E84894E27E556D9005D16B2 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8EF5675527EE8CAA009C1450 /* PlayVideo */ = {
+			isa = PBXGroup;
+			children = (
+				8EF5675627EE8CC1009C1450 /* PlayVideoViewController.swift */,
+				8EF5675727EE8CC1009C1450 /* PlayVideoViewController.xib */,
+			);
+			path = PlayVideo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +506,7 @@
 				8EB4FCCD27D329B700AF9598 /* VideoOnlyOne.json in Resources */,
 				8EC735E227C2AA4400010A7E /* Assets.xcassets in Resources */,
 				8EF12FAB27E051FB00B59A0B /* BottomSheetViewController.xib in Resources */,
+				8EF5675927EE8CC1009C1450 /* PlayVideoViewController.xib in Resources */,
 				8E2A89DD27C7476B00BD3187 /* VideosViewController.xib in Resources */,
 				8E10A27027D5669700FB3EE5 /* ChannelCell.xib in Resources */,
 				8EC3133327E4028600C96A1E /* VideoList.json in Resources */,
@@ -562,6 +577,7 @@
 				8E2A89DC27C7476B00BD3187 /* VideosViewController.swift in Sources */,
 				8E10A27327D566BF00FB3EE5 /* VideoCell.swift in Sources */,
 				8EE245A727C5F124001165BF /* PlaylistModel.swift in Sources */,
+				8EF5675827EE8CC1009C1450 /* PlayVideoViewController.swift in Sources */,
 				8EB4FCBE27D3246800AF9598 /* HomeProviderMock.swift in Sources */,
 				8EB4FCC127D324BD00AF9598 /* Utils.swift in Sources */,
 				8E84894B27E551B3005D16B2 /* UITableView+Extension.swift in Sources */,

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FloatingPanel
 
 class HomeViewController: UIViewController {
     
@@ -13,11 +14,12 @@ class HomeViewController: UIViewController {
     lazy var presenter = HomePresenter(delegate: self)
     private var objectList : [[Any]] = []
     private var sectionTitleList : [String] = []
+    var fpc: FloatingPanelController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
-        
+        configFloatinPanel()
         Task{
             await presenter.getHomeObjects()
         }
@@ -106,6 +108,22 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
         return sectionView
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = objectList[indexPath.section]
+        var videoId : String = ""
+        
+        if let playlistItem = item as? [PlaylistItemsModel.Item]{
+            videoId = playlistItem[indexPath.row].contentDetails?.videoId ?? ""
+            
+        }else if let videos = item as? [VideoModel.Item]{
+            videoId = videos[indexPath.row].id ?? ""
+        }else{
+            return
+        }
+        
+        presentViewPanel(videoId)
+    }
+    
     
     func configButtonSheet(){
         let vc = BottomSheetViewController()
@@ -120,5 +138,49 @@ extension HomeViewController : HomeViewProtocol{
         objectList = list
         self.sectionTitleList = sectionTitleList
         tableViewHome.reloadData()
+    }
+}
+
+extension HomeViewController : FloatingPanelControllerDelegate{
+    func presentViewPanel(_ videoId : String){
+        let contentVC = PlayVideoViewController()
+        contentVC.videoId = videoId
+        fpc?.set(contentViewController: contentVC)
+        if let fpc = fpc{
+            present(fpc, animated: true)
+        }
+        
+    }
+    func configFloatinPanel(){
+        fpc = FloatingPanelController(delegate: self)
+        fpc?.isRemovalInteractionEnabled = true
+        fpc?.surfaceView.grabberHandle.isHidden = true
+        fpc?.layout = MyFloatingPanelLayout()
+        fpc?.surfaceView.contentPadding = .init(top: -48, left: 0, bottom: -48, right: 0)
+    }
+    
+    func floatingPanelDidRemove(_ fpc: FloatingPanelController) {
+        //TODO:
+    }
+    
+    func floatingPanelWillEndDragging(_ vc: FloatingPanelController, withVelocity velocity: CGPoint, targetState: UnsafeMutablePointer<FloatingPanelState>) {
+        if targetState.pointee != .full {
+            //TODO:
+        }else{
+            //TODO:
+        }
+    }
+
+    
+}
+
+class MyFloatingPanelLayout: FloatingPanelLayout {
+    let position: FloatingPanelPosition = .bottom
+    let initialState: FloatingPanelState = .full
+    var anchors: [FloatingPanelState: FloatingPanelLayoutAnchoring] {
+        return [
+            .full: FloatingPanelLayoutAnchor(absoluteInset: 0.0, edge: .top, referenceGuide: .safeArea),
+            .tip: FloatingPanelLayoutAnchor(absoluteInset: 60.0, edge: .bottom, referenceGuide: .safeArea),
+        ]
     }
 }
