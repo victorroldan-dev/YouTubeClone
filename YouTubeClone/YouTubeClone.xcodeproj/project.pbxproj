@@ -36,6 +36,13 @@
 		8E53D5E527CB3DB1000E88D9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E53D5E427CB3DB1000E88D9 /* Constants.swift */; };
 		8E53D5EB27CB40B4000E88D9 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E53D5EA27CB40B4000E88D9 /* HomeProvider.swift */; };
 		8E53D5ED27CB435F000E88D9 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E53D5EC27CB435F000E88D9 /* HomePresenter.swift */; };
+		8E59307927F171990088FE33 /* PlayVideoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59307827F171990088FE33 /* PlayVideoPresenter.swift */; };
+		8E59307C27F171BB0088FE33 /* PlayVideoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59307B27F171BB0088FE33 /* PlayVideoProvider.swift */; };
+		8E59307E27F171C60088FE33 /* PlayVideoProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59307D27F171C60088FE33 /* PlayVideoProviderMock.swift */; };
+		8E59308227F178560088FE33 /* VideoFullWidthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59308027F178560088FE33 /* VideoFullWidthCell.swift */; };
+		8E59308327F178560088FE33 /* VideoFullWidthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E59308127F178560088FE33 /* VideoFullWidthCell.xib */; };
+		8E59308627F1786D0088FE33 /* VideoHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59308427F1786D0088FE33 /* VideoHeaderCell.swift */; };
+		8E59308727F1786D0088FE33 /* VideoHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E59308527F1786D0088FE33 /* VideoHeaderCell.xib */; };
 		8E84894B27E551B3005D16B2 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84894A27E551B3005D16B2 /* UITableView+Extension.swift */; };
 		8E84894D27E5558C005D16B2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84894C27E5558C005D16B2 /* UIColor+Extension.swift */; };
 		8E84894F27E556D9005D16B2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E84894E27E556D9005D16B2 /* UIImage+Extension.swift */; };
@@ -99,6 +106,13 @@
 		8E53D5E427CB3DB1000E88D9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8E53D5EA27CB40B4000E88D9 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
 		8E53D5EC27CB435F000E88D9 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		8E59307827F171990088FE33 /* PlayVideoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoPresenter.swift; sourceTree = "<group>"; };
+		8E59307B27F171BB0088FE33 /* PlayVideoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoProvider.swift; sourceTree = "<group>"; };
+		8E59307D27F171C60088FE33 /* PlayVideoProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoProviderMock.swift; sourceTree = "<group>"; };
+		8E59308027F178560088FE33 /* VideoFullWidthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFullWidthCell.swift; sourceTree = "<group>"; };
+		8E59308127F178560088FE33 /* VideoFullWidthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoFullWidthCell.xib; sourceTree = "<group>"; };
+		8E59308427F1786D0088FE33 /* VideoHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHeaderCell.swift; sourceTree = "<group>"; };
+		8E59308527F1786D0088FE33 /* VideoHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoHeaderCell.xib; sourceTree = "<group>"; };
 		8E84894A27E551B3005D16B2 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		8E84894C27E5558C005D16B2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8E84894E27E556D9005D16B2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -314,6 +328,42 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
+		8E59307627F1716C0088FE33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E59307A27F171A50088FE33 /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E59307727F171720088FE33 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8E59307827F171990088FE33 /* PlayVideoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8E59307A27F171A50088FE33 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				8E59307B27F171BB0088FE33 /* PlayVideoProvider.swift */,
+				8E59307D27F171C60088FE33 /* PlayVideoProviderMock.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		8E59307F27F1783C0088FE33 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8E59308027F178560088FE33 /* VideoFullWidthCell.swift */,
+				8E59308127F178560088FE33 /* VideoFullWidthCell.xib */,
+				8E59308427F1786D0088FE33 /* VideoHeaderCell.swift */,
+				8E59308527F1786D0088FE33 /* VideoHeaderCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		8EB4FCBF27D324A800AF9598 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,8 +478,8 @@
 		8EF5675527EE8CAA009C1450 /* PlayVideo */ = {
 			isa = PBXGroup;
 			children = (
-				8EF5675C27EE954E009C1450 /* Model */,
-				8EF5675B27EE9548009C1450 /* Presenter */,
+				8E59307727F171720088FE33 /* Presenter */,
+				8E59307627F1716C0088FE33 /* Model */,
 				8EF5675A27EE953F009C1450 /* View */,
 			);
 			path = PlayVideo;
@@ -438,32 +488,11 @@
 		8EF5675A27EE953F009C1450 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E59307F27F1783C0088FE33 /* Cells */,
 				8EF5675627EE8CC1009C1450 /* PlayVideoViewController.swift */,
 				8EF5675727EE8CC1009C1450 /* PlayVideoViewController.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		8EF5675B27EE9548009C1450 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		8EF5675C27EE954E009C1450 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8EF5675D27EE9553009C1450 /* Provider */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8EF5675D27EE9553009C1450 /* Provider */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,9 +569,11 @@
 				8EF12FAB27E051FB00B59A0B /* BottomSheetViewController.xib in Resources */,
 				8EF5675927EE8CC1009C1450 /* PlayVideoViewController.xib in Resources */,
 				8E2A89DD27C7476B00BD3187 /* VideosViewController.xib in Resources */,
+				8E59308327F178560088FE33 /* VideoFullWidthCell.xib in Resources */,
 				8E10A27027D5669700FB3EE5 /* ChannelCell.xib in Resources */,
 				8EC3133327E4028600C96A1E /* VideoList.json in Resources */,
 				8EC735E027C2AA4200010A7E /* Main.storyboard in Resources */,
+				8E59308727F1786D0088FE33 /* VideoHeaderCell.xib in Resources */,
 				8E2A89D927C7475B00BD3187 /* HomeViewController.xib in Resources */,
 				8E2A89E527C7478700BD3187 /* ChannelViewController.xib in Resources */,
 				8EB4FCC527D3265C00AF9598 /* Playlists.json in Resources */,
@@ -606,6 +637,7 @@
 				8EC735DD27C2AA4200010A7E /* ViewController.swift in Sources */,
 				8E369BAF27EA41A500CD5F3E /* BaseViewController.swift in Sources */,
 				8E53D5ED27CB435F000E88D9 /* HomePresenter.swift in Sources */,
+				8E59308627F1786D0088FE33 /* VideoHeaderCell.swift in Sources */,
 				8E2A89DC27C7476B00BD3187 /* VideosViewController.swift in Sources */,
 				8E10A27327D566BF00FB3EE5 /* VideoCell.swift in Sources */,
 				8EE245A727C5F124001165BF /* PlaylistModel.swift in Sources */,
@@ -613,10 +645,13 @@
 				8EB4FCBE27D3246800AF9598 /* HomeProviderMock.swift in Sources */,
 				8EB4FCC127D324BD00AF9598 /* Utils.swift in Sources */,
 				8E84894B27E551B3005D16B2 /* UITableView+Extension.swift in Sources */,
+				8E59307C27F171BB0088FE33 /* PlayVideoProvider.swift in Sources */,
 				8E2A89E027C7477900BD3187 /* PlaylistsViewController.swift in Sources */,
 				8E53D5E227CB3D30000E88D9 /* RequestModel.swift in Sources */,
+				8E59307E27F171C60088FE33 /* PlayVideoProviderMock.swift in Sources */,
 				8E369BB627EA4CC400CD5F3E /* OptionCell.swift in Sources */,
 				8EC3132D27E3FAA000C96A1E /* VideosProvider.swift in Sources */,
+				8E59308227F178560088FE33 /* VideoFullWidthCell.swift in Sources */,
 				8E10A27727D566CF00FB3EE5 /* PlaylistCell.swift in Sources */,
 				8E2A89E427C7478700BD3187 /* ChannelViewController.swift in Sources */,
 				8EB4FCCF27D32D1A00AF9598 /* MockManager.swift in Sources */,
@@ -630,6 +665,7 @@
 				8E2A89D827C7475B00BD3187 /* HomeViewController.swift in Sources */,
 				8E53D5EB27CB40B4000E88D9 /* HomeProvider.swift in Sources */,
 				8EC735DB27C2AA4200010A7E /* SceneDelegate.swift in Sources */,
+				8E59307927F171990088FE33 /* PlayVideoPresenter.swift in Sources */,
 				8E53D5DE27CB3CCC000E88D9 /* ServiceLayer.swift in Sources */,
 				8E2A89E827C7479400BD3187 /* AboutViewController.swift in Sources */,
 				8E2A89D027C7463400BD3187 /* MainViewController.swift in Sources */,
@@ -792,8 +828,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -821,8 +858,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
