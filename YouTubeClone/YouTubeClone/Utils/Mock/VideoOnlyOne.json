@@ -1,51 +1,81 @@
 {
     "kind": "youtube#videoListResponse",
-    "etag": "fM_XgVGxe5CZQVv4WykiAWQln0E",
+    "etag": "zdTzS7xokVfXppJYeLKLz-AsIYw",
     "items": [
         {
             "kind": "youtube#video",
-            "etag": "QgM9vNFU2PtF2tgRMaS253D1iAI",
-            "id": "eLhG15kJws0",
+            "etag": "zScW4mr2-ropOIG7k9mWxabsbzI",
+            "id": "v1mWkw7Lito",
             "snippet": {
-                "publishedAt": "2021-11-11T05:00:11Z",
+                "publishedAt": "2022-03-05T05:00:19Z",
                 "channelId": "UC_I_lCplbwIf60iUgsTE79g",
-                "title": "Manejo de Memoria - ARC y Retain Cycle con Closures y Delegates - iOS - Swift 3/3",
-                "description": "En este vide te explico qué son los closures brevemente y principalmente me enfoco en cómo se generan los retain cycles utilizando closures. Vas a aprender como revisar estos memory leaks desde el memory graph debuger. También te enseño cómo se puede generar un retain cycle utilizando el patron Delegations y también te explico cómo puedes resolverlo. \nTe traigo todo este conocimiento en español para que lo entiendas al 100%.\n\nNo olvides dejar tus comentarios y regalarme un like, de esta forma me apoyas en seguir creando contenido.\n\nParte 1: Manejo de Memoria - Value Type y Reference Type - iOS - Swift\nhttps://bit.ly/3bflhku\n\nParte 2: Manejo de Memoria - ARC y Retain Cycle, Strong, Weak, Unowned - iOS\nhttps://bit.ly/3jJqhm5\n\n\n-- Timestamps --\n00:00 Introducción\n00:40 Resumen de la parte 2\n01:28 Introducción a Closures\n02:10 Ejemplo práctico de Closures\n06:09 Retain Cycle en Closures \n07:18 Capture List en Closures\n10:42 Automatic Reference Counting en Closures\n12:30 Ejemplo de Closures y Retain Cycles en Xcode\n20:47 Patrón Observer y Closures\n25:11 Debug Memory Graph  \n26:09 Debug Navigator - Memory\n27:48 Memory Leak desde el Debug Memory Graph\n31:30 DispatchQueue y Capture List\n35:15 Retain Cycles y el Patrón Delegations\n39:15 Diagrama para saber cuando se genera un Retain Cycle con Closures\n\nDiagrama Detección de Retain Cycles - Medium\nhttps://medium.com/flawless-app-stories/you-dont-always-need-weak-self-a778bec505ef\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\n#iOSDevelopment #RetainCycle #MemoryLeak #MemoryManagement #closures #weakself #unowned #delgationspatter",
+                "title": "1- Curso de Swift iOS 15 desde CERO - Xcode 13 - 2022",
+                "description": "CLONANDO YOUTUBE *Curso de Swift* iOS 15 desde CERO Español 2022. Inroducción y Demo.\nEste es el primer video de una serie completa donde te explico paso a paso como crear una elegante App *YouTube* utilizando Swift UIKit, este curso está dirigido a cualquier persona, tenga o no un buen nivel desarrollando aplicaciones iOS. \n\nEn esta serie de videos te enseño cómo *crear app en swift desde cero*. Para su creación debes tener Xcode 13 instalado, ya que estaremos utilizando varios features de iOS15. Este CURSO DE SWIFT  está dirigido tanto a personas que ya tienen experiencia, como a principiantes en swift que a penas comienzan su carrera. Espero te sirva de mucho, házmelo saber en los comentarios.\n\nSi estás buscando un curso paso a paso de cómo crear una aplicación iOS con swift, este es curso definitivo que te enseñará a crear una aplicación de calidad y bajo estándares muy altos de calidad de código. \n\nPlaylist del Curso Completo:\nhttps://bit.ly/3IxWs2g\n\nRepositorio Github:\nhttps://bit.ly/3vpd6gy\n\nSUSCRIBETE AL CANAL\nhttps://bit.ly/3n6ttur\n\n-- Timestamps --\n00:00 Introducción\n00:21 Contenido de toda la aplicación\n03:04 Demo Clone YouTube\n07:23 Resumen\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\nCorreo de contacto:\nvictorroldan.dev@gmail.com\n\n#iOSDevelopment #CursoSwiftGratis #CloneYouTubeSwift #iOSProgramming #Swift #VictorRoldanDev #Xcode #AprenderSwift, #DesarrolladoriOS",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/default.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/hqdefault.jpg",
                         "width": 480,
                         "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
                     }
                 },
                 "channelTitle": "Victor Roldan Dev",
                 "tags": [
-                    "iOS development",
-                    "SwiftUI",
-                    "Swift",
-                    "Xcode",
-                    "Victor Roldan"
+                    "curso swift ios 15 español 2022",
+                    "curso de swift desde cero",
+                    "tutorial swift",
+                    "curso de swift",
+                    "tutorial swift 5",
+                    "swift",
+                    "curso swift",
+                    "curso swift ios15",
+                    "como crear una app",
+                    "xcode",
+                    "crear app con xcode",
+                    "xcode 13 español",
+                    "como hacer una app",
+                    "crear app ios",
+                    "ios app desde cero",
+                    "xcode 13",
+                    "ios15",
+                    "tutoriales de programacion swift",
+                    "curso swift español",
+                    "swift 5 en español",
+                    "Curso de Swift iOS 15 desde CERO",
+                    "como programar en swift",
+                    "curso swift 2022",
+                    "curso swift principiante",
+                    "Cursoswift"
                 ],
                 "categoryId": "22",
                 "liveBroadcastContent": "none",
                 "localized": {
-                    "title": "Manejo de Memoria - ARC y Retain Cycle con Closures y Delegates - iOS - Swift 3/3",
-                    "description": "En este vide te explico qué son los closures brevemente y principalmente me enfoco en cómo se generan los retain cycles utilizando closures. Vas a aprender como revisar estos memory leaks desde el memory graph debuger. También te enseño cómo se puede generar un retain cycle utilizando el patron Delegations y también te explico cómo puedes resolverlo. \nTe traigo todo este conocimiento en español para que lo entiendas al 100%.\n\nNo olvides dejar tus comentarios y regalarme un like, de esta forma me apoyas en seguir creando contenido.\n\nParte 1: Manejo de Memoria - Value Type y Reference Type - iOS - Swift\nhttps://bit.ly/3bflhku\n\nParte 2: Manejo de Memoria - ARC y Retain Cycle, Strong, Weak, Unowned - iOS\nhttps://bit.ly/3jJqhm5\n\n\n-- Timestamps --\n00:00 Introducción\n00:40 Resumen de la parte 2\n01:28 Introducción a Closures\n02:10 Ejemplo práctico de Closures\n06:09 Retain Cycle en Closures \n07:18 Capture List en Closures\n10:42 Automatic Reference Counting en Closures\n12:30 Ejemplo de Closures y Retain Cycles en Xcode\n20:47 Patrón Observer y Closures\n25:11 Debug Memory Graph  \n26:09 Debug Navigator - Memory\n27:48 Memory Leak desde el Debug Memory Graph\n31:30 DispatchQueue y Capture List\n35:15 Retain Cycles y el Patrón Delegations\n39:15 Diagrama para saber cuando se genera un Retain Cycle con Closures\n\nDiagrama Detección de Retain Cycles - Medium\nhttps://medium.com/flawless-app-stories/you-dont-always-need-weak-self-a778bec505ef\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\n#iOSDevelopment #RetainCycle #MemoryLeak #MemoryManagement #closures #weakself #unowned #delgationspatter"
+                    "title": "1- Curso de Swift iOS 15 desde CERO - Xcode 13 - 2022",
+                    "description": "CLONANDO YOUTUBE *Curso de Swift* iOS 15 desde CERO Español 2022. Inroducción y Demo.\nEste es el primer video de una serie completa donde te explico paso a paso como crear una elegante App *YouTube* utilizando Swift UIKit, este curso está dirigido a cualquier persona, tenga o no un buen nivel desarrollando aplicaciones iOS. \n\nEn esta serie de videos te enseño cómo *crear app en swift desde cero*. Para su creación debes tener Xcode 13 instalado, ya que estaremos utilizando varios features de iOS15. Este CURSO DE SWIFT  está dirigido tanto a personas que ya tienen experiencia, como a principiantes en swift que a penas comienzan su carrera. Espero te sirva de mucho, házmelo saber en los comentarios.\n\nSi estás buscando un curso paso a paso de cómo crear una aplicación iOS con swift, este es curso definitivo que te enseñará a crear una aplicación de calidad y bajo estándares muy altos de calidad de código. \n\nPlaylist del Curso Completo:\nhttps://bit.ly/3IxWs2g\n\nRepositorio Github:\nhttps://bit.ly/3vpd6gy\n\nSUSCRIBETE AL CANAL\nhttps://bit.ly/3n6ttur\n\n-- Timestamps --\n00:00 Introducción\n00:21 Contenido de toda la aplicación\n03:04 Demo Clone YouTube\n07:23 Resumen\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\nCorreo de contacto:\nvictorroldan.dev@gmail.com\n\n#iOSDevelopment #CursoSwiftGratis #CloneYouTubeSwift #iOSProgramming #Swift #VictorRoldanDev #Xcode #AprenderSwift, #DesarrolladoriOS"
                 },
                 "defaultAudioLanguage": "es-419"
             },
             "contentDetails": {
-                "duration": "PT42M14S",
+                "duration": "PT8M29S",
                 "dimension": "2d",
                 "definition": "hd",
                 "caption": "false",
@@ -62,13 +92,13 @@
                 "madeForKids": false
             },
             "statistics": {
-                "viewCount": "180",
-                "likeCount": "23",
+                "viewCount": "349",
+                "likeCount": "32",
                 "favoriteCount": "0",
                 "commentCount": "5"
             },
             "player": {
-                "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/eLhG15kJws0\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+                "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/v1mWkw7Lito\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
             },
             "topicDetails": {
                 "topicCategories": [

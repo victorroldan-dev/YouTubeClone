@@ -1,20 +1,67 @@
 {
     "kind": "youtube#playlistListResponse",
-    "etag": "dpqqSx7KXAjML-BHeLnq0_sj_tk",
+    "etag": "nIKT_U8cL9Z8SrTVSvRxDU_pkVw",
+    "nextPageToken": "CAUQAA",
     "pageInfo": {
-        "totalResults": 5,
+        "totalResults": 6,
         "resultsPerPage": 5
     },
     "items": [
         {
             "kind": "youtube#playlist",
-            "etag": "lT_A4fDoR_vS42VO6ULc7W33Y18",
+            "etag": "ZSN4L-qX_IjPN881-GhApLM1q_g",
+            "id": "PLT_OObKZ3CpuEomHCc6v-49u3DFCdCyLH",
+            "snippet": {
+                "publishedAt": "2022-02-26T19:04:22Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Curso de Swift Español - Clonando YouTube",
+                "description": "Curso de Swift en Español de cómo crear una aplicación desde cero con Xcode y Swift - iOS 15. Acompáñame en el recorrido completo de la creación de esta aplicación. \n\nEn el desarrollo de esta aplicación vamos a estar clonando YouTube.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "localized": {
+                    "title": "Curso de Swift Español - Clonando YouTube",
+                    "description": "Curso de Swift en Español de cómo crear una aplicación desde cero con Xcode y Swift - iOS 15. Acompáñame en el recorrido completo de la creación de esta aplicación. \n\nEn el desarrollo de esta aplicación vamos a estar clonando YouTube."
+                }
+            },
+            "contentDetails": {
+                "itemCount": 26
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "LbzOlnRZKG8W5cEnqIUEFB4HV2Y",
             "id": "PLT_OObKZ3CpuNE0t8rCWkArfpTgkJP9lm",
             "snippet": {
                 "publishedAt": "2021-10-23T04:53:14Z",
                 "channelId": "UC_I_lCplbwIf60iUgsTE79g",
                 "title": "Manejo de Memoria",
-                "description": "",
+                "description": "En esta serie de vides te explico todo sobre el manejo de memoria, cómo funciona, cómo evitar los memory leaks y también como evitarlos. Te recomiendo ver los 3 videos en el orden correcto para entender bien como funciona.",
                 "thumbnails": {
                     "default": {
                         "url": "https://i.ytimg.com/vi/BhM_dovPUmM/default.jpg",
@@ -45,7 +92,7 @@
                 "channelTitle": "Victor Roldan Dev",
                 "localized": {
                     "title": "Manejo de Memoria",
-                    "description": ""
+                    "description": "En esta serie de vides te explico todo sobre el manejo de memoria, cómo funciona, cómo evitar los memory leaks y también como evitarlos. Te recomiendo ver los 3 videos en el orden correcto para entender bien como funciona."
                 }
             },
             "contentDetails": {
@@ -54,7 +101,7 @@
         },
         {
             "kind": "youtube#playlist",
-            "etag": "Mrq8P1NsnrFhehOyeitpBxNc_Qs",
+            "etag": "_PcCAEikzUmcQiTnlZsB9YKOFmk",
             "id": "PLT_OObKZ3CpsvBaVOFyZR8goHaQyQFNFg",
             "snippet": {
                 "publishedAt": "2021-09-30T00:14:30Z",
@@ -63,27 +110,27 @@
                 "description": "",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/nFO6sm01Tig/default.jpg",
+                        "url": "https://i.ytimg.com/vi/_vJl_jRBFww/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/nFO6sm01Tig/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/_vJl_jRBFww/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/nFO6sm01Tig/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/_vJl_jRBFww/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     },
                     "standard": {
-                        "url": "https://i.ytimg.com/vi/nFO6sm01Tig/sddefault.jpg",
+                        "url": "https://i.ytimg.com/vi/_vJl_jRBFww/sddefault.jpg",
                         "width": 640,
                         "height": 480
                     },
                     "maxres": {
-                        "url": "https://i.ytimg.com/vi/nFO6sm01Tig/maxresdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/_vJl_jRBFww/maxresdefault.jpg",
                         "width": 1280,
                         "height": 720
                     }
@@ -95,7 +142,7 @@
                 }
             },
             "contentDetails": {
-                "itemCount": 1
+                "itemCount": 2
             }
         },
         {
@@ -188,42 +235,6 @@
             },
             "contentDetails": {
                 "itemCount": 2
-            }
-        },
-        {
-            "kind": "youtube#playlist",
-            "etag": "z6hd3xdUHXtBpNR1q7B9q5vdXmM",
-            "id": "PLT_OObKZ3CpurRPKIFvYcTDJQj55eE6dG",
-            "snippet": {
-                "publishedAt": "2021-09-07T02:30:54Z",
-                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
-                "title": "General",
-                "description": "",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "Victor Roldan Dev",
-                "localized": {
-                    "title": "General",
-                    "description": ""
-                }
-            },
-            "contentDetails": {
-                "itemCount": 10
             }
         }
     ]

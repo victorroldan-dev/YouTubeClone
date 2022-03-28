@@ -1,153 +1,317 @@
 {
     "kind": "youtube#playlistItemListResponse",
-    "etag": "94QaNW0w5Shdf_4NnPmJjY9QtXg",
+    "etag": "MhcPmE0lZTs8_J4lPwqzyfEmnJI",
+    "nextPageToken": "EAAaBlBUOkNBWQ",
     "items": [
         {
             "kind": "youtube#playlistItem",
-            "etag": "rfQRP9Ia8XhEm_Fe4pu3EpbZORc",
-            "id": "UExUX09PYktaM0NwdU5FMHQ4ckNXa0FyZnBUZ2tKUDlsbS41NkI0NEY2RDEwNTU3Q0M2",
+            "etag": "8g4ZEQiy4J7ePrE0ZrBWaacb1SM",
+            "id": "UExUX09PYktaM0NwdUVvbUhDYzZ2LTQ5dTNERkNkQ3lMSC41Mzk2QTAxMTkzNDk4MDhF",
             "snippet": {
-                "publishedAt": "2021-10-23T04:53:22Z",
+                "publishedAt": "2022-03-11T02:03:54Z",
                 "channelId": "UC_I_lCplbwIf60iUgsTE79g",
-                "title": "Manejo de Memoria - Value Type y Reference Type - iOS - Swift 1/3",
-                "description": "Este es el primer video vide de una serie completa donde explico en detalle todo lo relacionado al manejo de memoria en el desarrollo de aplicaciones iOS con Swift. \nTe invito a ver la serie completa donde vas a estar viendo: ARC, Retain Cycle, Memory Leak entre otros.\n\nNo olvides dejar tus comentarios y regalarme un like, de esta forma me apoyas en seguir creando contenido.\n\nParte 2: Manejo de Memoria - ARC y Retain Cycle, Strong, Weak, Unowned - iOS\nhttps://bit.ly/3jJqhm5\n\nParte 3: Manejo de Memoria - ARC y Retain Cycle con Closures y Delegates - iOS\nhttps://bit.ly/3qmzrZM\n\n-- Timestamps --\n00:00 Introducción\n01:15 Memory \n02:31 Instancias almacenadas\n03:15 Exceso de uso de memoria\n04:28 Instancias huérfanas\n06:05 Reference Types\n06:38 Value Types\n07:16 Ejemplos de Value Types y Reference Types\n08:25 Dirección en memoria\n10:21 Dirección en memoria - Value Types\n12:27 Dirección en memoria - Reference Types\n15:27 Ejercicio en Xcode\n23:00 Debug Memory Graph\n25:01 Instancias de un Value Type\n26:17 Introducción la segunda parte de la explicación\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\n#ARC #ValueType #ReferenceType #iOSDevelopment #RetainCycle #MemoryLeak #MemoryManagement  #AutomaticReferenceCounting",
+                "title": "1- Curso de Swift iOS 15 desde CERO - Xcode 13 - 2022",
+                "description": "CLONANDO YOUTUBE *Curso de Swift* iOS 15 desde CERO Español 2022. Inroducción y Demo.\nEste es el primer video de una serie completa donde te explico paso a paso como crear una elegante App *YouTube* utilizando Swift UIKit, este curso está dirigido a cualquier persona, tenga o no un buen nivel desarrollando aplicaciones iOS. \n\nEn esta serie de videos te enseño cómo *crear app en swift desde cero*. Para su creación debes tener Xcode 13 instalado, ya que estaremos utilizando varios features de iOS15. Este CURSO DE SWIFT  está dirigido tanto a personas que ya tienen experiencia, como a principiantes en swift que a penas comienzan su carrera. Espero te sirva de mucho, házmelo saber en los comentarios.\n\nSi estás buscando un curso paso a paso de cómo crear una aplicación iOS con swift, este es curso definitivo que te enseñará a crear una aplicación de calidad y bajo estándares muy altos de calidad de código. \n\nPlaylist del Curso Completo:\nhttps://bit.ly/3IxWs2g\n\nRepositorio Github:\nhttps://bit.ly/3vpd6gy\n\nSUSCRIBETE AL CANAL\nhttps://bit.ly/3n6ttur\n\n-- Timestamps --\n00:00 Introducción\n00:21 Contenido de toda la aplicación\n03:04 Demo Clone YouTube\n07:23 Resumen\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\nCorreo de contacto:\nvictorroldan.dev@gmail.com\n\n#iOSDevelopment #CursoSwiftGratis #CloneYouTubeSwift #iOSProgramming #Swift #VictorRoldanDev #Xcode #AprenderSwift, #DesarrolladoriOS",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/default.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     },
                     "standard": {
-                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/sddefault.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/sddefault.jpg",
                         "width": 640,
                         "height": 480
                     },
                     "maxres": {
-                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/maxresdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/maxresdefault.jpg",
                         "width": 1280,
                         "height": 720
                     }
                 },
                 "channelTitle": "Victor Roldan Dev",
-                "playlistId": "PLT_OObKZ3CpuNE0t8rCWkArfpTgkJP9lm",
+                "playlistId": "PLT_OObKZ3CpuEomHCc6v-49u3DFCdCyLH",
                 "position": 0,
                 "resourceId": {
                     "kind": "youtube#video",
-                    "videoId": "BhM_dovPUmM"
+                    "videoId": "v1mWkw7Lito"
                 },
                 "videoOwnerChannelTitle": "Victor Roldan Dev",
                 "videoOwnerChannelId": "UC_I_lCplbwIf60iUgsTE79g"
             },
             "contentDetails": {
-                "videoId": "BhM_dovPUmM",
-                "videoPublishedAt": "2021-10-26T05:00:04Z"
+                "videoId": "v1mWkw7Lito",
+                "videoPublishedAt": "2022-03-05T05:00:19Z"
             }
         },
         {
             "kind": "youtube#playlistItem",
-            "etag": "yAL6A5mE1xhlcrCUL56z7T_8uTA",
-            "id": "UExUX09PYktaM0NwdU5FMHQ4ckNXa0FyZnBUZ2tKUDlsbS4yODlGNEE0NkRGMEEzMEQy",
+            "etag": "FFvUStsOp7unMHP3GrXhGuz7ZYQ",
+            "id": "UExUX09PYktaM0NwdUVvbUhDYzZ2LTQ5dTNERkNkQ3lMSC45NzUwQkI1M0UxNThBMkU0",
             "snippet": {
-                "publishedAt": "2021-10-25T00:02:46Z",
+                "publishedAt": "2022-03-11T02:04:36Z",
                 "channelId": "UC_I_lCplbwIf60iUgsTE79g",
-                "title": "Manejo de Memoria - ARC y Retain Cycle, Strong, Weak, Unowned - iOS - Swift 2/3",
-                "description": "En esta video te explico como funciona el Automatic Reference Counting y cómo se debe gestionar los reference types para evitar generar un Retain Cycle en swift. También aprende qué son referencias Strong, Weak y Unowned, y para qué se utilizan.\n\nNo olvides dejar tus comentarios y regalarme un like, de esta forma me apoyas en seguir creando contenido.\n\nParte 1: Manejo de Memoria - Value Type y Reference Type - iOS - Swift\nhttps://bit.ly/3bflhku\n\nParte 3: Manejo de Memoria - ARC y Retain Cycle con Closures y Delegates - iOS\nhttps://bit.ly/3qmzrZM\n\n-- Timestamps --\n00:00 Introducción\n00:48 Que es ARC o Automatic Reference Counting\n02:22 Ejemplo del contador de ARC\n06:24 Ejercicio de ARC - deinit\n10:11 Segundo ejemplo ARC\n14:56 Retain Cycle\n17:37 Strong, Weak, Unowned\n20:05 Resolviendo un Retain Cycle\n25:29 Ejercicio práctico Retain Cycle\n28:40 Instrument\n33:28 Introducción a la tercera parte de la explicación\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\n#ARC #RetainCycle #MemoryLeak #StrongWeakUnowned #iOSDevelopment  #MemoryManagement  #AutomaticReferenceCounting",
+                "title": "2- Creación Proyecto Xcode 13 y Repositorio Github - *Curso Swift* iOS 15 Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso iOS Swift UIKit* Español 2022.\nEn esta segunda parte te explico como funciona Git + creación del repositorio y Proyecto en Xcode, también se agregan los custom colors y Assets para el AppIcon y Launch Screen. \nTodos los Assets a utilizar se encuentran al final de esta descripción. \n\nEn esta serie de videos te enseño cómo *crear app en swift desde cero*. Para su creación debes tener Xcode 13 instalado, ya que estaremos utilizando varios features de iOS15. Este CURSO DE SWIFT  está dirigido tanto a personas que ya tienen experiencia, como a principiantes en swift que a penas comienzan su carrera. Espero te sirva de mucho, házmelo saber en los comentarios.\n\nPlaylist del Curso Completo:\nhttps://bit.ly/3IxWs2g\n\nComo comenzar con Xcode:\nhttps://www.youtube.com/watch?v=3V7mHbcxIp0\n\nRepositorio Github\nhttps://bit.ly/3vpd6gy\n\nSUSCRIBETE AL CANAL\nhttps://bit.ly/3n6ttur\n\n-- Timestamps --\n00:00 Introducción.\n01:22 Que es Git y como funciona.\n03:42 Creación repositorio Github\n08:51 Creación del Proyecto Xcode\n10:08 Agregar Assets al proyecto Xcode\n11:21 Agregar AppIcon\n12:54 Agregando el LauchScreen\n14:55 Diseño en Sketch de la aplicación\n15:58 Agregar custom colors a los assets en Xcode\n\nColores a utilizar: \nbackgroundColor\ndark: 212121\nany: FFFFFF\n\ngrayColor\ndark: ABABAB\nany: 555555\n\nwhiteColor\ndark: FFFFFF\nany: 202020\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\nDescarga Assets, AppIcon:\nhttps://bit.ly/3t3AEVy\n\nDescarga GitFork:\nhttps://git-fork.com/\n\nDescarga Xcode:\nhttps://apps.apple.com/co/app/xcode/id497799835?l=en&mt=12\n\nDescarga Sketch:\nhttps://www.sketch.com/downloads/mac/\n\nDescarga Diseño Aplicación:\nhttps://github.com/victorroldan-dev/YouTubeClone/tree/main/YouTubeClone/Design\n\nDescargar e Instalar Git:\nhttp://git-scm.com/download/mac\n\n#iOSDevelopment #SwiftAndGit #CursoSwiftGratis #CloneYouTubeSwift #iOSProgramming #Swift #VictorRoldanDev",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/lWZLs5BYLiM/default.jpg",
+                        "url": "https://i.ytimg.com/vi/jGxdknovBv8/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/lWZLs5BYLiM/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/jGxdknovBv8/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/lWZLs5BYLiM/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/jGxdknovBv8/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     },
                     "standard": {
-                        "url": "https://i.ytimg.com/vi/lWZLs5BYLiM/sddefault.jpg",
+                        "url": "https://i.ytimg.com/vi/jGxdknovBv8/sddefault.jpg",
                         "width": 640,
                         "height": 480
                     },
                     "maxres": {
-                        "url": "https://i.ytimg.com/vi/lWZLs5BYLiM/maxresdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/jGxdknovBv8/maxresdefault.jpg",
                         "width": 1280,
                         "height": 720
                     }
                 },
                 "channelTitle": "Victor Roldan Dev",
-                "playlistId": "PLT_OObKZ3CpuNE0t8rCWkArfpTgkJP9lm",
+                "playlistId": "PLT_OObKZ3CpuEomHCc6v-49u3DFCdCyLH",
                 "position": 1,
                 "resourceId": {
                     "kind": "youtube#video",
-                    "videoId": "lWZLs5BYLiM"
+                    "videoId": "jGxdknovBv8"
                 },
                 "videoOwnerChannelTitle": "Victor Roldan Dev",
                 "videoOwnerChannelId": "UC_I_lCplbwIf60iUgsTE79g"
             },
             "contentDetails": {
-                "videoId": "lWZLs5BYLiM",
-                "videoPublishedAt": "2021-10-28T05:00:14Z"
+                "videoId": "jGxdknovBv8",
+                "videoPublishedAt": "2022-03-05T05:01:32Z"
             }
         },
         {
             "kind": "youtube#playlistItem",
-            "etag": "KyKWl76xGSX6R5QjyK4Ydrc9-ks",
-            "id": "UExUX09PYktaM0NwdU5FMHQ4ckNXa0FyZnBUZ2tKUDlsbS4wMTcyMDhGQUE4NTIzM0Y5",
+            "etag": "UkE-pdB0WD6Bn-4C2Di7AW7qykI",
+            "id": "UExUX09PYktaM0NwdUVvbUhDYzZ2LTQ5dTNERkNkQ3lMSC5EQUE1NTFDRjcwMDg0NEMz",
             "snippet": {
-                "publishedAt": "2021-11-11T04:26:11Z",
+                "publishedAt": "2022-03-11T02:03:54Z",
                 "channelId": "UC_I_lCplbwIf60iUgsTE79g",
-                "title": "Manejo de Memoria - ARC y Retain Cycle con Closures y Delegates - iOS - Swift 3/3",
-                "description": "En este vide te explico qué son los closures brevemente y principalmente me enfoco en cómo se generan los retain cycles utilizando closures. Vas a aprender como revisar estos memory leaks desde el memory graph debuger. También te enseño cómo se puede generar un retain cycle utilizando el patron Delegations y también te explico cómo puedes resolverlo. \nTe traigo todo este conocimiento en español para que lo entiendas al 100%.\n\nNo olvides dejar tus comentarios y regalarme un like, de esta forma me apoyas en seguir creando contenido.\n\nParte 1: Manejo de Memoria - Value Type y Reference Type - iOS - Swift\nhttps://bit.ly/3bflhku\n\nParte 2: Manejo de Memoria - ARC y Retain Cycle, Strong, Weak, Unowned - iOS\nhttps://bit.ly/3jJqhm5\n\n\n-- Timestamps --\n00:00 Introducción\n00:40 Resumen de la parte 2\n01:28 Introducción a Closures\n02:10 Ejemplo práctico de Closures\n06:09 Retain Cycle en Closures \n07:18 Capture List en Closures\n10:42 Automatic Reference Counting en Closures\n12:30 Ejemplo de Closures y Retain Cycles en Xcode\n20:47 Patrón Observer y Closures\n25:11 Debug Memory Graph  \n26:09 Debug Navigator - Memory\n27:48 Memory Leak desde el Debug Memory Graph\n31:30 DispatchQueue y Capture List\n35:15 Retain Cycles y el Patrón Delegations\n39:15 Diagrama para saber cuando se genera un Retain Cycle con Closures\n\nDiagrama Detección de Retain Cycles - Medium\nhttps://medium.com/flawless-app-stories/you-dont-always-need-weak-self-a778bec505ef\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\n#iOSDevelopment #RetainCycle #MemoryLeak #MemoryManagement #closures #weakself #unowned #delgationspatter",
+                "title": "3- Qué es un API, YouTube API V3, POSTMAN *Curso Swift* iOS 15 Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift UIKit iOS 15* Español 2022.\nEn este video te explico qué es un API, como consumir los servicios de YouTube API V3, y también generamos el Api-Key en google cloud platform para el posterior uso en la aplicación. Adicionalmente estaremos dando un repaso por POSTMAN y cómo utilizar postman. APIs\n\nEn esta serie de videos te enseño cómo *crear app en swift desde cero*. Para su creación debes tener Xcode 13 instalado, ya que estaremos utilizando varios features de iOS15. Este CURSO DE SWIFT  está dirigido tanto a personas que ya tienen experiencia, como a principiantes en swift que a penas comienzan su carrera. Espero te sirva de mucho, házmelo saber en los comentarios.\n\nPlaylist del Curso Completo:\nhttps://bit.ly/3IxWs2g\n\nRepositorio Github:\nhttps://bit.ly/3vpd6gy\n\nSUSCRIBETE AL CANAL\nhttps://bit.ly/3n6ttur\n\n-- Timestamps --\n00:00 Introducción\n01:08 Que es un API, Api-Key y AccessToken\n04:31 Que es JSON y para que se usa\n05:29 Documentación YouTube API V3\n06:54 Como probar el API en la misma documentación\n09:09 Introducción a Postman\n13:51 Crear y Configurar Proyecto en Google Cloud Platform\n15:20 Creación del Api-Key\n15:40 Primer request en Postman\n\nDocumentación YouTube API V3:\nhttps://developers.google.com/youtube/v3/docs\n\nGoogle Developer Console Generar Api-Key:\nhttps://console.developers.google.com/\n\nDescargar Postman\nhttps://www.postman.com/downloads/\n\nDescargar Collection Postman\nhttps://github.com/victorroldan-dev/YouTubeClone/tree/main/YouTubeClone/GeneralAssets\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\n#iOSDevelopment #CursoSwiftGratis #YouTubeApiV3 #CloneYouTubeSwift #iOSProgramming #Swift #VictorRoldanDev",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/default.jpg",
+                        "url": "https://i.ytimg.com/vi/QS40bTp53R0/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/QS40bTp53R0/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/eLhG15kJws0/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/QS40bTp53R0/hqdefault.jpg",
                         "width": 480,
                         "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/QS40bTp53R0/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/QS40bTp53R0/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
                     }
                 },
                 "channelTitle": "Victor Roldan Dev",
-                "playlistId": "PLT_OObKZ3CpuNE0t8rCWkArfpTgkJP9lm",
+                "playlistId": "PLT_OObKZ3CpuEomHCc6v-49u3DFCdCyLH",
                 "position": 2,
                 "resourceId": {
                     "kind": "youtube#video",
-                    "videoId": "eLhG15kJws0"
+                    "videoId": "QS40bTp53R0"
                 },
                 "videoOwnerChannelTitle": "Victor Roldan Dev",
                 "videoOwnerChannelId": "UC_I_lCplbwIf60iUgsTE79g"
             },
             "contentDetails": {
-                "videoId": "eLhG15kJws0",
-                "videoPublishedAt": "2021-11-11T05:00:11Z"
+                "videoId": "QS40bTp53R0",
+                "videoPublishedAt": "2022-03-06T05:00:13Z"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "JdR7vjCuO-pvKmQUipH8fm1Jmp4",
+            "id": "UExUX09PYktaM0NwdUVvbUhDYzZ2LTQ5dTNERkNkQ3lMSC41QTY1Q0UxMTVCODczNThE",
+            "snippet": {
+                "publishedAt": "2022-03-11T02:03:54Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "4- Patrón de Arquitectura MVP - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift* UIKit iOS 15 Español 2022.\nEn esta parte te voy a mostrar el Patrón de Arquitectura MVP. En caso que ya tengas conocimiento de cómo funciona, te puedes saltar este video ya que es solo teórico. Vamos a abordar el tema sobre model view presenter en swift.\n\nEn esta serie de videos te enseño cómo *crear app en swift desde cero*. Para su creación debes tener Xcode 13 instalado, ya que estaremos utilizando varios features de iOS15. Este CURSO DE SWIFT  está dirigido tanto a personas que ya tienen experiencia, como a principiantes en swift que a penas comienzan su carrera. Espero te sirva de mucho, házmelo saber en los comentarios.\n\n\nPlaylist del Curso Completo:\nhttps://bit.ly/3IxWs2g\n\nSUSCRIBETE AL CANAL\nhttps://bit.ly/3n6ttur\n\nPatrón Delegations:\nhttps://www.youtube.com/watch?v=v7NEplM3ZrY\n\n-- Timestamps --\n00:00 Introducción.\n01:09 Explicación del Patrón de Arquitectura MVP\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\n#iOSDevelopment #CursoSwiftGratis #CloneYouTubeSwift #iOSProgramming #Swift #VictorRoldanDev",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3ZXxXtoPmoo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3ZXxXtoPmoo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3ZXxXtoPmoo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/3ZXxXtoPmoo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/3ZXxXtoPmoo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "playlistId": "PLT_OObKZ3CpuEomHCc6v-49u3DFCdCyLH",
+                "position": 3,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "3ZXxXtoPmoo"
+                },
+                "videoOwnerChannelTitle": "Victor Roldan Dev",
+                "videoOwnerChannelId": "UC_I_lCplbwIf60iUgsTE79g"
+            },
+            "contentDetails": {
+                "videoId": "3ZXxXtoPmoo",
+                "videoPublishedAt": "2022-03-07T05:00:00Z"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "KZPsPpe8O5dCtierqYGmaTxLLmA",
+            "id": "UExUX09PYktaM0NwdUVvbUhDYzZ2LTQ5dTNERkNkQ3lMSC4yMUQyQTQzMjRDNzMyQTMy",
+            "snippet": {
+                "publishedAt": "2022-03-11T02:03:54Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "5- Crear Model en Swift Paso a Paso - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso de Swift* iOS 15 desde CERO Español 2022.\nEn esta parte vamos a abordar en detalle, como Crear Model  en Swift desde cero, para ello vamos a revisar el response del Endpoint utilizando Postman. Vamos a estar repasando el porqué utilizar Decodable. \n\nEn esta serie de videos te enseño cómo crear una app en swift desde cero. Para su creación debes tener Xcode 13 instalado, ya que estaremos utilizando varios features de iOS15. Este curso de swift  está dirigido tanto a personas que ya tienen experiencia, como a principiantes en swift que a penas comienzan su carrera. Espero te sirva de mucho, házmelo saber en los comentarios.\n\nPlaylist del Curso Completo:\nhttps://bit.ly/3IxWs2g\n\nRepositorio Github:\nhttps://bit.ly/3vpd6gy\n\nSUSCRIBETE AL CANAL\nhttps://bit.ly/3n6ttur\n\n-- Timestamps --\n00:00 Introducción\n00:28 Creación del Model PlaylistModel\n\nDescargar Postman\nhttps://www.postman.com/downloads/\n\nDescargar Collection Postman\nhttps://github.com/victorroldan-dev/YouTubeClone/tree/main/YouTubeClone/GeneralAssets\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\n#iOSDevelopment #iOSProgramming #Swift #VictorRoldanDev",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/NrpGrtenhjs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/NrpGrtenhjs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/NrpGrtenhjs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/NrpGrtenhjs/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/NrpGrtenhjs/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "playlistId": "PLT_OObKZ3CpuEomHCc6v-49u3DFCdCyLH",
+                "position": 4,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "NrpGrtenhjs"
+                },
+                "videoOwnerChannelTitle": "Victor Roldan Dev",
+                "videoOwnerChannelId": "UC_I_lCplbwIf60iUgsTE79g"
+            },
+            "contentDetails": {
+                "videoId": "NrpGrtenhjs",
+                "videoPublishedAt": "2022-03-08T05:00:06Z"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "YRGxXKHERxExpeeKrME1wx-XvQU",
+            "id": "UExUX09PYktaM0NwdUVvbUhDYzZ2LTQ5dTNERkNkQ3lMSC45RTgxNDRBMzUwRjQ0MDhC",
+            "snippet": {
+                "publishedAt": "2022-03-11T02:03:54Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "6- Usando Quicktype.io para crear Models Swift - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift UIKit iOS 15* Español 2022.\nVamos a crear los Model de forma automatizada y mucho mas sencillo utilizando quicktype.io, como convertir un JSON para Crear Models Swift. Qué son los CodingKeys y para qué lo vamos a estar utilizando más adelante. \n\nEn esta serie de videos te enseño cómo crear una app en swift desde cero. Para su creación debes tener Xcode 13 instalado, ya que estaremos utilizando varios features de iOS15. Este curso de swift  está dirigido tanto a personas que ya tienen experiencia, como a principiantes en swift que a penas comienzan su carrera. Espero te sirva de mucho, házmelo saber en los comentarios.\n\nPlaylist del Curso Completo:\nhttps://bit.ly/3IxWs2g\n\nRepositorio Github:\nhttps://bit.ly/3vpd6gy\n\nSUSCRIBETE AL CANAL\nhttps://bit.ly/3n6ttur\n\n-- Timestamps --\n00:00 Introducción\n00:24 Utilizando quicktype para crear models\n\nTwitter: \nhttps://twitter.com/VictorRoldanDev\n\nQuickType:\nhttps://quicktype.io/\n\n#SwiftModel, #Quicktype, #iOSDevelopment #iOSProgramming #Swift #VictorRoldanDev",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/t0jLFIxMR2E/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/t0jLFIxMR2E/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/t0jLFIxMR2E/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/t0jLFIxMR2E/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/t0jLFIxMR2E/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "playlistId": "PLT_OObKZ3CpuEomHCc6v-49u3DFCdCyLH",
+                "position": 5,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "t0jLFIxMR2E"
+                },
+                "videoOwnerChannelTitle": "Victor Roldan Dev",
+                "videoOwnerChannelId": "UC_I_lCplbwIf60iUgsTE79g"
+            },
+            "contentDetails": {
+                "videoId": "t0jLFIxMR2E",
+                "videoPublishedAt": "2022-03-08T05:01:50Z"
             }
         }
     ],
     "pageInfo": {
-        "totalResults": 3,
-        "resultsPerPage": 5
+        "totalResults": 26,
+        "resultsPerPage": 6
     }
 }

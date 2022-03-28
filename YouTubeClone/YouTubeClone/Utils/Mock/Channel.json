@@ -1,6 +1,6 @@
 {
     "kind": "youtube#channelListResponse",
-    "etag": "NZFDN0EewEIssO7kw7kaaS6Sjvo",
+    "etag": "RxM51RGfsJrA2oGzi3B4BPOS4Bg",
     "pageInfo": {
         "totalResults": 1,
         "resultsPerPage": 5
@@ -8,11 +8,12 @@
     "items": [
         {
             "kind": "youtube#channel",
-            "etag": "O620S0fUUusYcg0vz1qmKHF7eaY",
+            "etag": "MTTd39oUCeG4yoOugGvLhclPt34",
             "id": "UC_I_lCplbwIf60iUgsTE79g",
             "snippet": {
                 "title": "Victor Roldan Dev",
                 "description": "Bienvenido a mi canal, soy Victor Roldán y estoy aquí para ayudar a formarte como iOS Developer utilizando principalmente Swift y SwiftUI. \n\nVoy a estar trabajando duro para traerte contenido útil que te sirva para iniciarte en este mundo del *Software Development*. El contenido que estaré creando es sobre mobile development, específicamente con iOS, enfocándome principalmente en *Swift y SwiftUI*\n\nMi canal estará dirigido a todos aquellos que quieran seguir nutriéndose de conocimientos y para quienes quieran aprender a dar sus primeros pasos en el desarrollo mobile iOS.\n\nSobre mi:\nSoy Venezolano, Ingeniero en Informática, con +11 años de experiencia en el área, he sido Tech Lead durante los últimos 4 años en empresas de Software Development. En mi carrera pasé por diferentes seniorities comenzando com Jr hasta escalar a Tech Lead, en mi trayectoria he recogido un montón de conocimientos que te traigo totalmente gratis en este canal.\n",
+                "customUrl": "victorroldandev",
                 "publishedAt": "2021-08-15T21:40:44.921697Z",
                 "thumbnails": {
                     "default": {
@@ -31,6 +32,7 @@
                         "height": 800
                     }
                 },
+                "defaultLanguage": "es-419",
                 "localized": {
                     "title": "Victor Roldan Dev",
                     "description": "Bienvenido a mi canal, soy Victor Roldán y estoy aquí para ayudar a formarte como iOS Developer utilizando principalmente Swift y SwiftUI. \n\nVoy a estar trabajando duro para traerte contenido útil que te sirva para iniciarte en este mundo del *Software Development*. El contenido que estaré creando es sobre mobile development, específicamente con iOS, enfocándome principalmente en *Swift y SwiftUI*\n\nMi canal estará dirigido a todos aquellos que quieran seguir nutriéndose de conocimientos y para quienes quieran aprender a dar sus primeros pasos en el desarrollo mobile iOS.\n\nSobre mi:\nSoy Venezolano, Ingeniero en Informática, con +11 años de experiencia en el área, he sido Tech Lead durante los últimos 4 años en empresas de Software Development. En mi carrera pasé por diferentes seniorities comenzando com Jr hasta escalar a Tech Lead, en mi trayectoria he recogido un montón de conocimientos que te traigo totalmente gratis en este canal.\n"
@@ -38,16 +40,17 @@
                 "country": "CO"
             },
             "statistics": {
-                "viewCount": "5950",
-                "subscriberCount": "262",
+                "viewCount": "9481",
+                "subscriberCount": "383",
                 "hiddenSubscriberCount": false,
-                "videoCount": "18"
+                "videoCount": "43"
             },
             "brandingSettings": {
                 "channel": {
                     "title": "Victor Roldan Dev",
                     "description": "Bienvenido a mi canal, soy Victor Roldán y estoy aquí para ayudar a formarte como iOS Developer utilizando principalmente Swift y SwiftUI. \n\nVoy a estar trabajando duro para traerte contenido útil que te sirva para iniciarte en este mundo del *Software Development*. El contenido que estaré creando es sobre mobile development, específicamente con iOS, enfocándome principalmente en *Swift y SwiftUI*\n\nMi canal estará dirigido a todos aquellos que quieran seguir nutriéndose de conocimientos y para quienes quieran aprender a dar sus primeros pasos en el desarrollo mobile iOS.\n\nSobre mi:\nSoy Venezolano, Ingeniero en Informática, con +11 años de experiencia en el área, he sido Tech Lead durante los últimos 4 años en empresas de Software Development. En mi carrera pasé por diferentes seniorities comenzando com Jr hasta escalar a Tech Lead, en mi trayectoria he recogido un montón de conocimientos que te traigo totalmente gratis en este canal.\n",
-                    "keywords": "ios development tutorials xcode swift uikit swiftui mobile app \"iOS app\" \"Victor Roldan\" \"como comenzar con xcode\" \"tutoriales de iOS\" \"curso gratis ios swift\"",
+                    "keywords": "ios development tutorials xcode swift uikit swiftui mobile app \"iOS app\" \"Victor Roldan\" \"como comenzar con xcode\" \"tutoriales de iOS\" \"curso gratis ios swift\" \"roldan victor\" \"curso swift\" \"tutorial de swift\" \"tutorial swift ios\" \"como crear una aplicación en ios\" \"programar en swift\" \"como programar en swift\" \"como comenzar con swift\" \"programar en swiftui\"",
+                    "defaultLanguage": "es-419",
                     "country": "CO"
                 },
                 "image": {
