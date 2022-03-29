@@ -64,6 +64,8 @@
 		8EC735E027C2AA4200010A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC735DE27C2AA4200010A7E /* Main.storyboard */; };
 		8EC735E227C2AA4400010A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC735E127C2AA4400010A7E /* Assets.xcassets */; };
 		8EC735E527C2AA4400010A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC735E327C2AA4400010A7E /* LaunchScreen.storyboard */; };
+		8ED7605E27F2C9E500332EC9 /* ButtonsIconList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7605D27F2C9E500332EC9 /* ButtonsIconList.swift */; };
+		8ED7606027F2D24200332EC9 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7605F27F2D24200332EC9 /* UILabel+Extension.swift */; };
 		8EE245A727C5F124001165BF /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE245A627C5F124001165BF /* PlaylistModel.swift */; };
 		8EE245A927C5F75B001165BF /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE245A827C5F75B001165BF /* VideoModel.swift */; };
 		8EE245AB27C5FAAF001165BF /* PlaylistItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE245AA27C5FAAF001165BF /* PlaylistItemsModel.swift */; };
@@ -136,6 +138,8 @@
 		8EC735E127C2AA4400010A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EC735E427C2AA4400010A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EC735E627C2AA4400010A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED7605D27F2C9E500332EC9 /* ButtonsIconList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsIconList.swift; sourceTree = "<group>"; };
+		8ED7605F27F2D24200332EC9 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		8EE245A627C5F124001165BF /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
 		8EE245A827C5F75B001165BF /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		8EE245AA27C5FAAF001165BF /* PlaylistItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemsModel.swift; sourceTree = "<group>"; };
@@ -444,6 +448,14 @@
 			path = YouTubeClone;
 			sourceTree = "<group>";
 		};
+		8ED7605C27F2C9C900332EC9 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7605D27F2C9E500332EC9 /* ButtonsIconList.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		8EE245A527C5F0F8001165BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +479,7 @@
 		8EF12FAC27E0581800B59A0B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8ED7605F27F2D24200332EC9 /* UILabel+Extension.swift */,
 				8EF12FAD27E0582D00B59A0B /* UIView+Extension.swift */,
 				8E84894A27E551B3005D16B2 /* UITableView+Extension.swift */,
 				8E84894C27E5558C005D16B2 /* UIColor+Extension.swift */,
@@ -488,6 +501,7 @@
 		8EF5675A27EE953F009C1450 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8ED7605C27F2C9C900332EC9 /* CustomViews */,
 				8E59307F27F1783C0088FE33 /* Cells */,
 				8EF5675627EE8CC1009C1450 /* PlayVideoViewController.swift */,
 				8EF5675727EE8CC1009C1450 /* PlayVideoViewController.xib */,
@@ -649,11 +663,13 @@
 				8E2A89E027C7477900BD3187 /* PlaylistsViewController.swift in Sources */,
 				8E53D5E227CB3D30000E88D9 /* RequestModel.swift in Sources */,
 				8E59307E27F171C60088FE33 /* PlayVideoProviderMock.swift in Sources */,
+				8ED7605E27F2C9E500332EC9 /* ButtonsIconList.swift in Sources */,
 				8E369BB627EA4CC400CD5F3E /* OptionCell.swift in Sources */,
 				8EC3132D27E3FAA000C96A1E /* VideosProvider.swift in Sources */,
 				8E59308227F178560088FE33 /* VideoFullWidthCell.swift in Sources */,
 				8E10A27727D566CF00FB3EE5 /* PlaylistCell.swift in Sources */,
 				8E2A89E427C7478700BD3187 /* ChannelViewController.swift in Sources */,
+				8ED7606027F2D24200332EC9 /* UILabel+Extension.swift in Sources */,
 				8EB4FCCF27D32D1A00AF9598 /* MockManager.swift in Sources */,
 				8EC735D927C2AA4200010A7E /* AppDelegate.swift in Sources */,
 				8EC3132F27E3FC4B00C96A1E /* VideosProviderMock.swift in Sources */,
