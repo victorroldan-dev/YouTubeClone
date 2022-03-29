@@ -8,7 +8,7 @@
 import UIKit
 import youtube_ios_player_helper
 
-class PlayVideoViewController: UIViewController {
+class PlayVideoViewController: BaseViewController {
     @IBOutlet weak var playerView: YTPlayerView!
     @IBOutlet weak var tableViewVideos: UITableView!
     lazy var presenter = PlayVideoPresenter(delegate: self)

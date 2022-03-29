@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol HomeViewProtocol: AnyObject{
+protocol HomeViewProtocol: AnyObject, BaseViewProtocol{
     func getData(list : [[Any]], sectionTitleList : [String])
 }
 
-class HomePresenter{
+@MainActor class HomePresenter{
     var provider : HomeProviderProtocol
     weak var delegate : HomeViewProtocol?
     private var objectList : [[Any]] = []
@@ -27,7 +27,6 @@ class HomePresenter{
         #endif
     }
     
-    @MainActor
     func getHomeObjects() async{
         objectList.removeAll()
         sectionTitleList.removeAll()
@@ -60,10 +59,12 @@ class HomePresenter{
             delegate?.getData(list: objectList, sectionTitleList: sectionTitleList)
             
         }catch{
-            print(error)
+            delegate?.showError(error.localizedDescription, callback: {
+                Task{[weak self] in
+                    await self?.getHomeObjects()
+                }
+            })
         }
-        
-        
     }
     
     func getPlaylistItems(playlistId: String) async -> PlaylistItemsModel?{
@@ -71,7 +72,11 @@ class HomePresenter{
             let playlistItems = try await provider.getPlaylistItems(playlistId: playlistId)
             return playlistItems
         }catch{
-            print("error:", error)
+            delegate?.showError(error.localizedDescription, callback: {
+                Task{[weak self] in
+                    await self?.getHomeObjects()
+                }
+            })
             return nil
         }
         

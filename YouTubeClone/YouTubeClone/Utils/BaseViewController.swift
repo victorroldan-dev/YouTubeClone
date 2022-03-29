@@ -7,12 +7,14 @@
 
 import UIKit
 
+protocol BaseViewProtocol{
+    func showError(_ error : String, callback : (()->Void)?)
+}
+
 class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
     func configNavigationBar(){
@@ -56,5 +58,27 @@ class BaseViewController: UIViewController {
     
     @objc func dotsButtonPressed(){
         print("dotsButtonPressed")
+    }
+}
+
+extension BaseViewController{
+    func showError(_ error : String, callback : (()->Void)?){
+        let alert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+        
+        if let callback = callback{
+            alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: { action in
+                if action.style == .default{
+                    callback()
+                    print("retry button pressed")
+                }
+            }))
+        }
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { action in
+            if action.style == .cancel{
+                print("ok button pressed")
+            }
+        }))
+        
+        present(alert, animated: true)
     }
 }

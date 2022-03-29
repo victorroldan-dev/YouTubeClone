@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PlayVideoViewProtocol : AnyObject{
+protocol PlayVideoViewProtocol : AnyObject, BaseViewProtocol{
     func getRelatedVideosFinished()
 }
 
@@ -38,7 +38,11 @@ protocol PlayVideoViewProtocol : AnyObject{
             delegate?.getRelatedVideosFinished()
             
         }catch{
-            print("")
+            delegate?.showError(error.localizedDescription, callback: {
+                Task{[weak self] in
+                    await self?.getVideos(videoId)
+                }
+            })
         }
     }
     
@@ -53,9 +57,8 @@ protocol PlayVideoViewProtocol : AnyObject{
             channelModel = responseChannel.items.first
             
         }catch{
-            print("error", error)
+            delegate?.showError(error.localizedDescription, callback: nil)
         }
-        
     }
     
   
