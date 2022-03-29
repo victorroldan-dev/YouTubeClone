@@ -30,13 +30,17 @@ protocol HomeViewProtocol: AnyObject, BaseViewProtocol{
     func getHomeObjects() async{
         objectList.removeAll()
         sectionTitleList.removeAll()
-
+        delegate?.loadingView(.show)
         async let channel = try await provider.getChannel(channelId: Constants.channelId).items
         async let playlist = try await provider.getPlaylists(channelId: Constants.channelId).items
         async let videos = try await provider.getVideos(searchString: "", channelId: Constants.channelId).items
         
 
         do{
+            defer{
+                delegate?.loadingView(.hide)
+            }
+            
             let (responseChannel, responsePlaylist, responseVideos) = await (try channel, try playlist, try videos)
             
             //Index 0

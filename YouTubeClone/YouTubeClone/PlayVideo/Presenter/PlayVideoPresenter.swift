@@ -29,7 +29,12 @@ protocol PlayVideoViewProtocol : AnyObject, BaseViewProtocol{
     }
     
     func getVideos(_ videoId : String) async{
+        delegate?.loadingView(.show)
+        
         do{
+            defer{
+                delegate?.loadingView(.hide)
+            }
             let response = try await provider.getVideo(videoId)
             relatedVideoList.append(response.items)
             
