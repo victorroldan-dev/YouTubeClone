@@ -76,6 +76,14 @@ extension PlayVideoViewController : UITableViewDelegate, UITableViewDataSource{
             return videoFullWidthCell
         }
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0{
+            return 270
+        }else{
+            return 290
+        }
+    }
 }
 
 extension PlayVideoViewController : YTPlayerViewDelegate{
