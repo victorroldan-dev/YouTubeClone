@@ -11,6 +11,16 @@ import youtube_ios_player_helper
 class PlayVideoViewController: BaseViewController {
     @IBOutlet weak var playerView: YTPlayerView!
     @IBOutlet weak var tableViewVideos: UITableView!
+    
+    @IBOutlet weak var tipView: UIView!
+    @IBOutlet weak var xmarkCloseVideo: UIButton!
+    @IBOutlet weak var playVideoButton: UIButton!
+    @IBOutlet weak var videoTitleLabel: UILabel!
+    @IBOutlet weak var channelTitleLabel: UILabel!
+    @IBOutlet weak var playerViewTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var playerViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var safeAreaInsetView: UIView!
+    
     lazy var presenter = PlayVideoPresenter(delegate: self)
     var goingToBeCollapsed : ((Bool)->Void)?
     
@@ -31,6 +41,15 @@ class PlayVideoViewController: BaseViewController {
         configPlayerView()
         loadDataFromApi()
         configCloseButton()
+        generalConfigs()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: .viewPosition, object: nil)
+    }
+    
+    private func generalConfigs(){
+        NotificationCenter.default.addObserver(self, selector: #selector(floatingPannelChanged(notification:)), name: .viewPosition, object: nil)
     }
     
     private func loadDataFromApi(){
@@ -74,6 +93,37 @@ class PlayVideoViewController: BaseViewController {
         goingToBeCollapsed(true)
     }
 
+    @objc func floatingPannelChanged(notification: Notification){
+        guard let value = notification.object as? [String : String] else{return}
+        if value["position"] == "top"{
+            tipView.isHidden = true
+            playerViewHeightConstraint.constant = 225.0
+            playerViewTrailingConstraint.constant = 0.0
+            collapseVideoButton.isHidden = false
+            view.layoutIfNeeded()
+            safeAreaInsetView.isHidden = true
+        }else{//bottom
+            tipView.isHidden = false
+            collapseVideoButton.isHidden = true
+            playerViewHeightConstraint.constant = playerViewHeightConstraint.constant*0.3
+            playerViewTrailingConstraint.constant = UIScreen.main.bounds.width*0.7
+            view.layoutIfNeeded()
+            safeAreaInsetView.isHidden = false
+        }
+    }
+    
+    @IBAction func playButtonPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func closeButtonPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func tipViewButtonPressed(_ sender: Any) {
+        
+    }
+    
     
 }
 extension PlayVideoViewController : UITableViewDelegate, UITableViewDataSource{

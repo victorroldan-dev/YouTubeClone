@@ -192,13 +192,20 @@ extension HomeViewController : FloatingPanelControllerDelegate{
     
     func floatingPanelWillEndDragging(_ vc: FloatingPanelController, withVelocity velocity: CGPoint, targetState: UnsafeMutablePointer<FloatingPanelState>) {
         if targetState.pointee != .full {
-            //TODO:
+            NotificationCenter.default.post(name: .viewPosition, object: ["position":"bottom"])
+            fpc?.surfaceView.contentPadding = .init(top: 0, left: 0, bottom: 0, right: 0)
         }else{
-            //TODO:
+            NotificationCenter.default.post(name: .viewPosition, object: ["position":"top"])
+            fpc?.surfaceView.contentPadding = .init(top: -48, left: 0, bottom: -48, right: 0)
         }
     }
 
     
+}
+
+extension NSNotification.Name{
+    static let viewPosition = Notification.Name("viewPosition")
+    static let expand = Notification.Name("expand")
 }
 
 class MyFloatingPanelLayout: FloatingPanelLayout {
