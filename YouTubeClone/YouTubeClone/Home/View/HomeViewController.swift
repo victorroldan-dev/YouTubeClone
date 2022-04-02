@@ -15,6 +15,7 @@ class HomeViewController: BaseViewController {
     private var objectList : [[Any]] = []
     private var sectionTitleList : [String] = []
     var fpc: FloatingPanelController?
+    var floatingPanelIsPresented : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,11 +118,25 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
             
         }else if let videos = item as? [VideoModel.Item]{
             videoId = videos[indexPath.row].id ?? ""
+        }
+        if floatingPanelIsPresented{
+            fpc?.willMove(toParent: nil)
+            fpc?.hide(animated: true, completion: {[weak self] in
+                guard let self = self else {return}
+                // Remove the floating panel view from your controller's view.
+                self.fpc?.view.removeFromSuperview()
+                // Remove the floating panel controller from the controller hierarchy.
+                self.fpc?.removeFromParent()
+                
+                self.dismiss(animated: true, completion: {
+                    self.presentViewPanel(videoId)
+                })
+            })
         }else{
-            return
+            presentViewPanel(videoId)
         }
         
-        presentViewPanel(videoId)
+        
     }
     
     
@@ -145,8 +160,20 @@ extension HomeViewController : FloatingPanelControllerDelegate{
     func presentViewPanel(_ videoId : String){
         let contentVC = PlayVideoViewController()
         contentVC.videoId = videoId
+        
+        contentVC.goingToBeCollapsed = {[weak self] goingToBeCollapsed in
+            guard let self = self else {return}
+            if goingToBeCollapsed{
+                self.fpc?.move(to: .tip, animated: true)
+            }else{
+                self.fpc?.move(to: .full, animated: true)
+            }
+        }
+        
         fpc?.set(contentViewController: contentVC)
+        fpc?.track(scrollView: contentVC.tableViewVideos)
         if let fpc = fpc{
+            floatingPanelIsPresented = true
             present(fpc, animated: true)
         }
         

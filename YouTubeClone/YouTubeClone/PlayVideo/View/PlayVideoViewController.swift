@@ -12,14 +12,25 @@ class PlayVideoViewController: BaseViewController {
     @IBOutlet weak var playerView: YTPlayerView!
     @IBOutlet weak var tableViewVideos: UITableView!
     lazy var presenter = PlayVideoPresenter(delegate: self)
+    var goingToBeCollapsed : ((Bool)->Void)?
     
     var videoId : String = ""
+    lazy var collapseVideoButton : UIButton = {
+        let button = UIButton(type: .custom)
+        button.setTitle("", for: .normal)
+        button.setImage(UIImage.chevronDown, for: .normal)
+        button.tintColor = .whiteColor
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(collapsedVideoButtonPressed(_:)), for: .touchUpInside)
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
         configPlayerView()
         loadDataFromApi()
+        configCloseButton()
     }
     
     private func loadDataFromApi(){
@@ -47,6 +58,22 @@ class PlayVideoViewController: BaseViewController {
         tableViewVideos.rowHeight = UITableView.automaticDimension
         tableViewVideos.estimatedRowHeight = 60
     }
+    
+    private func configCloseButton(){
+        playerView.addSubview(collapseVideoButton)
+        NSLayoutConstraint.activate([
+            collapseVideoButton.topAnchor.constraint(equalTo: playerView.topAnchor, constant: 5),
+            collapseVideoButton.leadingAnchor.constraint(equalTo: playerView.leadingAnchor, constant: 5),
+            collapseVideoButton.widthAnchor.constraint(equalToConstant: 25),
+            collapseVideoButton.heightAnchor.constraint(equalToConstant: 25),
+        ])
+    }
+    
+    @objc private func collapsedVideoButtonPressed(_ sender : UIButton){
+        guard let goingToBeCollapsed = self.goingToBeCollapsed else {return}
+        goingToBeCollapsed(true)
+    }
+
     
 }
 extension PlayVideoViewController : UITableViewDelegate, UITableViewDataSource{
