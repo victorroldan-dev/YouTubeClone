@@ -132,13 +132,10 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
                     self.presentViewPanel(videoId)
                 })
             })
-        }else{
-            presentViewPanel(videoId)
+            return
         }
-        
-        
+        presentViewPanel(videoId)
     }
-    
     
     func configButtonSheet(){
         let vc = BottomSheetViewController()
@@ -165,9 +162,17 @@ extension HomeViewController : FloatingPanelControllerDelegate{
             guard let self = self else {return}
             if goingToBeCollapsed{
                 self.fpc?.move(to: .tip, animated: true)
+                NotificationCenter.default.post(name: .viewPosition, object: ["position":"bottom"])
+                self.fpc?.surfaceView.contentPadding = .init(top: 0, left: 0, bottom: 0, right: 0)
             }else{
                 self.fpc?.move(to: .full, animated: true)
+                NotificationCenter.default.post(name: .viewPosition, object: ["position":"top"])
+                self.fpc?.surfaceView.contentPadding = .init(top: -48, left: 0, bottom: -48, right: 0)
             }
+        }
+        
+        contentVC.isClosedVideo = {[weak self] in
+            self?.floatingPanelIsPresented = false
         }
         
         fpc?.set(contentViewController: contentVC)
@@ -176,8 +181,8 @@ extension HomeViewController : FloatingPanelControllerDelegate{
             floatingPanelIsPresented = true
             present(fpc, animated: true)
         }
-        
     }
+    
     func configFloatinPanel(){
         fpc = FloatingPanelController(delegate: self)
         fpc?.isRemovalInteractionEnabled = true
@@ -187,7 +192,7 @@ extension HomeViewController : FloatingPanelControllerDelegate{
     }
     
     func floatingPanelDidRemove(_ fpc: FloatingPanelController) {
-        //TODO:
+        floatingPanelIsPresented = false
     }
     
     func floatingPanelWillEndDragging(_ vc: FloatingPanelController, withVelocity velocity: CGPoint, targetState: UnsafeMutablePointer<FloatingPanelState>) {
@@ -199,8 +204,6 @@ extension HomeViewController : FloatingPanelControllerDelegate{
             fpc?.surfaceView.contentPadding = .init(top: -48, left: 0, bottom: -48, right: 0)
         }
     }
-
-    
 }
 
 extension NSNotification.Name{

@@ -71,13 +71,13 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cómo comenzar a crear aplicaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVB-fn-T1C">
-                            <rect key="frame" x="120" y="8.5" width="174" height="18"/>
+                            <rect key="frame" x="120" y="18.5" width="174" height="18"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" name="whiteColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Victor Roldan Dev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LT5-WH-Ecq">
-                            <rect key="frame" x="120" y="30.5" width="174" height="14.5"/>
+                            <rect key="frame" x="120" y="40.5" width="174" height="14.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <color key="textColor" name="grayColor"/>
                             <nil key="highlightedColor"/>
@@ -87,12 +87,12 @@
                     <constraints>
                         <constraint firstItem="VVB-fn-T1C" firstAttribute="leading" secondItem="q3V-fD-ZjG" secondAttribute="leading" constant="120" id="4uu-EE-J9h"/>
                         <constraint firstItem="LT5-WH-Ecq" firstAttribute="trailing" secondItem="VVB-fn-T1C" secondAttribute="trailing" id="84k-7i-Pbr"/>
-                        <constraint firstItem="VVB-fn-T1C" firstAttribute="centerY" secondItem="q3V-fD-ZjG" secondAttribute="centerY" constant="-10" id="85Q-cS-iPe"/>
+                        <constraint firstItem="VVB-fn-T1C" firstAttribute="centerY" secondItem="q3V-fD-ZjG" secondAttribute="centerY" id="85Q-cS-iPe"/>
                         <constraint firstItem="C1t-eN-gFD" firstAttribute="width" secondItem="DhB-lP-Y0D" secondAttribute="width" id="8lq-et-8xO"/>
                         <constraint firstAttribute="trailing" secondItem="DhB-lP-Y0D" secondAttribute="trailing" constant="20" symbolic="YES" id="LDU-WH-y1s"/>
                         <constraint firstItem="C1t-eN-gFD" firstAttribute="centerY" secondItem="DhB-lP-Y0D" secondAttribute="centerY" id="Rj3-hk-SeQ"/>
                         <constraint firstItem="LT5-WH-Ecq" firstAttribute="leading" secondItem="VVB-fn-T1C" secondAttribute="leading" id="TiN-Rf-RFk"/>
-                        <constraint firstItem="LT5-WH-Ecq" firstAttribute="centerY" secondItem="q3V-fD-ZjG" secondAttribute="centerY" constant="10" id="ZiP-fn-Uej"/>
+                        <constraint firstItem="LT5-WH-Ecq" firstAttribute="centerY" secondItem="q3V-fD-ZjG" secondAttribute="centerY" constant="20" id="ZiP-fn-Uej"/>
                         <constraint firstAttribute="height" constant="55" id="cDP-pX-oZz"/>
                         <constraint firstItem="C1t-eN-gFD" firstAttribute="leading" secondItem="VVB-fn-T1C" secondAttribute="trailing" constant="10" id="dBv-Ys-X1w"/>
                         <constraint firstItem="DhB-lP-Y0D" firstAttribute="centerY" secondItem="q3V-fD-ZjG" secondAttribute="centerY" id="gMi-10-9FH"/>

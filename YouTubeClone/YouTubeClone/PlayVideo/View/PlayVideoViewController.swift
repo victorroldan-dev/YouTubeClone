@@ -23,8 +23,15 @@ class PlayVideoViewController: BaseViewController {
     
     lazy var presenter = PlayVideoPresenter(delegate: self)
     var goingToBeCollapsed : ((Bool)->Void)?
-    
+    var isClosedVideo : (()->Void)?
     var videoId : String = ""
+    
+    var isPlayingVideo : Bool = false{
+        didSet{
+            playVideoButton.setImage(isPlayingVideo ? .pause : .playFill, for: .normal)
+        }
+    }
+    
     lazy var collapseVideoButton : UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("", for: .normal)
@@ -35,6 +42,22 @@ class PlayVideoViewController: BaseViewController {
         return button
     }()
     
+    var topInsetSafeArea : UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .black
+        return view
+    }()
+    
+    var progressBar : UIProgressView = {
+        let progress = UIProgressView()
+        progress.translatesAutoresizingMaskIntoConstraints = false
+        progress.trackTintColor = .clear
+        progress.progressTintColor = .red
+        progress.progress = 0.0
+        return progress
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
@@ -42,6 +65,9 @@ class PlayVideoViewController: BaseViewController {
         loadDataFromApi()
         configCloseButton()
         generalConfigs()
+        configTopInsetSafeAreaConstraints()
+        configProgressLayout()
+
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -63,6 +89,26 @@ class PlayVideoViewController: BaseViewController {
         
         playerView.load(withVideoId: videoId, playerVars: playerVars)
         playerView.delegate = self
+    }
+    
+    func configTopInsetSafeAreaConstraints(){
+        view.addSubview(topInsetSafeArea)
+        NSLayoutConstraint.activate([
+            topInsetSafeArea.widthAnchor.constraint(equalTo: view.widthAnchor),
+            topInsetSafeArea.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            topInsetSafeArea.topAnchor.constraint(equalTo: view.topAnchor),
+            topInsetSafeArea.bottomAnchor.constraint(equalTo: playerView.topAnchor),
+        ])
+    }
+    
+    func configProgressLayout() {
+        tipView.addSubview(progressBar)
+        NSLayoutConstraint.activate([
+            progressBar.widthAnchor.constraint(equalTo: tipView.widthAnchor),
+            progressBar.heightAnchor.constraint(equalToConstant: 2.0),
+            progressBar.centerXAnchor.constraint(equalTo: tipView.centerXAnchor),
+            progressBar.bottomAnchor.constraint(equalTo: tipView.bottomAnchor, constant: 12),
+        ])
     }
     
     private func configTableView(){
@@ -113,15 +159,20 @@ class PlayVideoViewController: BaseViewController {
     }
     
     @IBAction func playButtonPressed(_ sender: Any) {
-        
+        isPlayingVideo ? playerView.stopVideo() : playerView.playVideo()
     }
     
     @IBAction func closeButtonPressed(_ sender: Any) {
-        
+        if let isClosedVideo = isClosedVideo{
+            isClosedVideo()
+        }
+        dismiss(animated: true)
     }
     
     @IBAction func tipViewButtonPressed(_ sender: Any) {
-        
+        if let goingToBeCollapsed = goingToBeCollapsed {
+            goingToBeCollapsed(false)
+        }
     }
     
     
@@ -167,11 +218,46 @@ extension PlayVideoViewController : YTPlayerViewDelegate{
     func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
         playerView.playVideo()
     }
+    
+    func playerView(_ playerView: YTPlayerView, didChangeTo state: YTPlayerState) {
+        switch state {
+        case .unstarted:
+            print("unstarted")
+        case .ended:
+            print("ended")
+            isPlayingVideo = false
+        case .playing:
+            print("playing")
+            isPlayingVideo = true
+        case .paused:
+            print("paused")
+            isPlayingVideo = false
+        case .buffering:
+            print("buffering")
+        case .cued:
+            isPlayingVideo = false
+            print("cued")
+        case .unknown:
+            print("unknown")
+        @unknown default:
+            print("error")
+        }
+    }
+    
+    func playerView(_ playerView: YTPlayerView, didPlayTime playTime: Float) {
+        playerView.duration { duration, error in
+            self.progressBar.progress = (playTime/Float(duration))
+        }
+    }
 }
 
 extension PlayVideoViewController : PlayVideoViewProtocol{
     func getRelatedVideosFinished() {
-        print("response")
+        if let video = presenter.relatedVideoList[0].first as? VideoModel.Item,
+           let title = video.snippet?.title{
+            videoTitleLabel.text = title
+        }
+        channelTitleLabel.text = presenter.channelModel?.snippet.title
         tableViewVideos.reloadData()
     }
 }
