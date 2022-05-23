@@ -17,6 +17,7 @@ import XCTest
     var timeOut : TimeInterval = 2.0
     
     @MainActor override func setUpWithError() throws {
+        MockManager.shared.runAppWithMock = true
         sutDelegate = PlayVideoViewMock()
         providerMock = PlayVideoProviderMock()
         sut = PlayVideoPresenter(delegate: sutDelegate, provider: providerMock)
@@ -31,6 +32,8 @@ import XCTest
     
     func test_GetVideos() {
         sutDelegate.expGetRelatedVideosFinished = expectation(description: "loading video")
+        sutDelegate.expLoading = expectation(description: "show/hide loading")
+        sutDelegate.expLoading?.expectedFulfillmentCount = 2
         
         Task{
             await sut.getVideos(videoId)
@@ -45,10 +48,50 @@ import XCTest
         }
         XCTAssertTrue(videos.first?.id == videoId, "el id recibido no es igual al esperado")
         
-        
         XCTAssertTrue(sut.relatedVideoList.count == 2)
+        XCTAssertTrue(sut.channelModel!.id == Constants.channelId, "el id esperado no coincide")
+        
+        XCTAssertTrue(sutDelegate.loadingViewWasCalled)
+        XCTAssertTrue(sutDelegate.loadingHide, "el loading debería ocultarse")
+        XCTAssertTrue(sutDelegate.loadingShow, "el loading debería mostrarse")
     }
     
+    func test_GetVideos_ShouldFail() {
+        MockManager.shared.runAppWithMock = false
+        sutDelegate = PlayVideoViewMock()
+        providerMock = PlayVideoProviderMock()
+        providerMock.throwError = true
+        sutDelegate.expShowError = expectation(description: "loading")
+        
+        sut = PlayVideoPresenter(delegate: sutDelegate, provider: providerMock)
+        
+        Task{
+            await sut.getVideos(videoId)
+        }
+        waitForExpectations(timeout: timeOut)
+        
+        XCTAssertFalse(sutDelegate.getRelatedVideosFinishedWasCalled)
+        XCTAssertTrue(sutDelegate.showErrorWasCalled)
+        
+    }
+    
+    func test_GetChannelAndRelatedVideos_ShouldFail(){
+        MockManager.shared.runAppWithMock = false
+        sutDelegate = PlayVideoViewMock()
+        providerMock = PlayVideoProviderMock()
+        providerMock.throwError = true
+        sutDelegate.expShowError = expectation(description: "loading")
+        
+        sut = PlayVideoPresenter(delegate: sutDelegate, provider: providerMock)
+        
+        Task{
+            await sut.getChannelAndRelatedVideos(videoId, Constants.channelId)
+        }
+        
+        waitForExpectations(timeout: timeOut)
+        
+        XCTAssertTrue(sutDelegate.showErrorWasCalled)
+    }
 
     func test_GetSumNumbers_When_ShouldSumTwoNumbers() {
         let expectedNumber = 20
@@ -56,9 +99,6 @@ import XCTest
         XCTAssertTrue(result == expectedNumber, "el resultado esperado es \(expectedNumber), pero recibió \(result)")
         
     }
-    
-    
-    
 }
 
 class PlayVideoViewMock : PlayVideoViewProtocol{
@@ -66,14 +106,25 @@ class PlayVideoViewMock : PlayVideoViewProtocol{
     var showErrorWasCalled : Bool = false
     var getRelatedVideosFinishedWasCalled : Bool = false
     var expGetRelatedVideosFinished : XCTestExpectation?
+    var expLoading : XCTestExpectation?
+    var expShowError : XCTestExpectation?
+    var loadingShow : Bool = false
+    var loadingHide : Bool = false
     
     
     func loadingView(_ state: LoadingViewState) {
+        if state == .show{
+            loadingShow = true
+        }else if state == .hide{
+            loadingHide = true
+        }
         loadingViewWasCalled = true
+        expLoading?.fulfill()
     }
     
     func showError(_ error: String, callback: (() -> Void)?) {
         showErrorWasCalled = true
+        expShowError?.fulfill()
     }
     
     func getRelatedVideosFinished() {
