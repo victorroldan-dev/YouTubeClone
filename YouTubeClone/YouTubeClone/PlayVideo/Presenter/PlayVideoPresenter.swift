@@ -66,5 +66,10 @@ protocol PlayVideoViewProtocol : AnyObject, BaseViewProtocol{
         }
     }
     
+    func getSumNumbers(a : Int, b : Int) -> Int{
+        var result = 0
+        result = a + b
+        return result
+    }
   
 }
