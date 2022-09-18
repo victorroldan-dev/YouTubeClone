@@ -8,7 +8,12 @@
 import Foundation
 
 class HomeProviderMock : HomeProviderProtocol{
+    var throwError : Bool = false
+    
     func getVideos(searchString: String, channelId: String) async throws -> VideoModel {
+        if throwError{
+            throw NetworkError.generic
+        }
         guard let model = Utils.parseJson(jsonName: "SearchVideos", model: VideoModel.self) else{
             throw NetworkError.jsonDecoder
         }
@@ -16,6 +21,9 @@ class HomeProviderMock : HomeProviderProtocol{
     }
     
     func getChannel(channelId: String) async throws -> ChannelModel {
+        if throwError{
+            throw NetworkError.generic
+        }
         guard let model = Utils.parseJson(jsonName: "Channel", model: ChannelModel.self) else{
             throw NetworkError.jsonDecoder
         }
@@ -23,6 +31,9 @@ class HomeProviderMock : HomeProviderProtocol{
     }
     
     func getPlaylists(channelId: String) async throws -> PlaylistModel {
+        if throwError{
+            throw NetworkError.generic
+        }
         guard let model = Utils.parseJson(jsonName: "Playlists", model: PlaylistModel.self) else{
             throw NetworkError.jsonDecoder
         }
@@ -30,6 +41,9 @@ class HomeProviderMock : HomeProviderProtocol{
     }
     
     func getPlaylistItems(playlistId: String) async throws -> PlaylistItemsModel {
+        if throwError{
+            throw NetworkError.generic
+        }
         guard let model = Utils.parseJson(jsonName: "PlaylistItems", model: PlaylistItemsModel.self) else{
             throw NetworkError.jsonDecoder
         }
