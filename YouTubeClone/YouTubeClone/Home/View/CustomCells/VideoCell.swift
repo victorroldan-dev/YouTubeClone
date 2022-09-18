@@ -13,6 +13,7 @@ class VideoCell: UITableViewCell {
     @IBOutlet weak var viewsCountLabel: UILabel!
     @IBOutlet weak var channelName: UILabel!
     @IBOutlet weak var videoName: UILabel!
+    @IBOutlet weak var dotsButton: UIButton!
     @IBOutlet weak var videoImage: UIImageView!
     
     var didTapDostsButton : (()->Void)?
