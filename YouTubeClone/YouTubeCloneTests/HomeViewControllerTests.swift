@@ -10,14 +10,22 @@ import XCTest
 
 class HomeViewControllerTests: XCTestCase {
     var sut: HomeViewController!
+    var provider : HomeProviderProtocol!
+    var waiting : TimeInterval = 0.2
     
+    @MainActor
     override func setUpWithError() throws {
+        PresentMockManger.shared.vc = nil
+        provider = HomeProviderMock()
         sut = HomeViewController()
+        sut.presenter = HomePresenter(delegate: sut, provider: provider)
         sut.loadViewIfNeeded()
     }
 
     override func tearDownWithError() throws {
         sut = nil
+        PresentMockManger.shared.vc = nil
+        provider = nil
     }
 
     func testHeaderInfoTableView_ShouldContain_ChannelInfo() throws {
@@ -26,7 +34,7 @@ class HomeViewControllerTests: XCTestCase {
         
         let expLadingData = expectation(description: "loading")
         
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+        DispatchQueue.main.asyncAfter(deadline: .now()+waiting) {
             expLadingData.fulfill()
         }
         waitForExpectations(timeout: 1.0)
@@ -53,7 +61,7 @@ class HomeViewControllerTests: XCTestCase {
         
         let expLadingData = expectation(description: "loading")
         
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+        DispatchQueue.main.asyncAfter(deadline: .now()+waiting) {
             expLadingData.fulfill()
         }
         waitForExpectations(timeout: 1.0)
@@ -77,7 +85,7 @@ class HomeViewControllerTests: XCTestCase {
         
         let expLadingData = expectation(description: "loading")
         
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {
+        DispatchQueue.main.asyncAfter(deadline: .now()+waiting) {
             expLadingData.fulfill()
         }
         waitForExpectations(timeout: 1.0)
@@ -94,5 +102,70 @@ class HomeViewControllerTests: XCTestCase {
         )
         
         XCTAssertEqual(dotsActions.count, 1)
+    }
+    
+    func testShareButtonPressed_ShouldPushTo_HomeViewController() throws {
+        //Arrange
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var sut = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        sut.loadViewIfNeeded()
+        
+        let navigationMock = NavigationControllerMock(rootViewController: sut)
+        
+        //Act
+        sut.shareButtonPressed()
+        guard let vc = navigationMock.pushedVC as? HomeViewController else{
+            XCTFail("falló")
+            return
+        }
+        
+        //Assert
+        XCTAssertTrue(vc.isKind(of: HomeViewController.self))
+    }
+    
+    
+    func testVideoSection_OpenBottomSheet() throws{
+        //Arrange
+        let tableView = try XCTUnwrap(sut.tableViewHome, "you should create this IBOutlet")
+        
+        let expLadingData = expectation(description: "loading")
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+waiting) {
+            expLadingData.fulfill()
+        }
+        waitForExpectations(timeout: 1.0)
+        
+        guard let videoCell = tableView.cellForRow(at: IndexPath(item: 0, section: 1)) as? VideoCell else{
+            XCTFail("The first position should be the VideoCell")
+            return
+        }
+        let dotsButton = try XCTUnwrap(videoCell.dotsButton)
+        dotsButton.sendActions(for: .touchUpInside)
+        
+        //Assert
+        XCTAssertTrue(PresentMockManger.shared.vc.isKind(of: BottomSheetViewController.self))
+        
+    }
+}
+
+class NavigationControllerMock : UINavigationController{
+    var pushedVC : UIViewController!
+    
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        super.pushViewController(viewController, animated: animated)
+        pushedVC = viewController
+    }
+}
+
+fileprivate class PresentMockManger{
+    static var shared = PresentMockManger()
+    init(){}
+    var vc : UIViewController!
+}
+
+extension HomeViewController{
+    override open func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil){
+        super.present(viewControllerToPresent, animated: flag)
+        PresentMockManger.shared.vc = viewControllerToPresent
     }
 }

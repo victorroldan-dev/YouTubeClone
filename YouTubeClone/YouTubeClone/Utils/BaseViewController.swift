@@ -57,6 +57,8 @@ class BaseViewController: UIViewController {
     
     @objc func shareButtonPressed(){
         print("shareButtonPressed")
+        let vc = HomeViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func magnifyButtonPressed(){
