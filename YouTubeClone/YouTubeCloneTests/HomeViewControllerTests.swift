@@ -107,8 +107,8 @@ class HomeViewControllerTests: XCTestCase {
     func testShareButtonPressed_ShouldPushTo_HomeViewController() throws {
         //Arrange
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        var sut = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-        sut.loadViewIfNeeded()
+        let sut = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        //sut.loadViewIfNeeded()//<- remove this line
         
         let navigationMock = NavigationControllerMock(rootViewController: sut)
         
